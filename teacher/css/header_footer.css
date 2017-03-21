@@ -1,0 +1,120 @@
+/*ͷ��*/
+body{font-family: "微软雅黑", Arial, sans-serif;}
+.header{
+    width: 100%;
+    height: 62px;
+    background: #fff;
+}
+.header .header_con{
+    width: 1200px;
+    margin: 0 auto;
+    height: 62px;
+    position: relative;
+}
+.header .header_con .logo{
+    margin: 8px 112px 0 48px;
+}
+.header .header_con .header_list li{
+    float: left;
+}
+.header .header_con .header_list li a{
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    margin: 0 30px;
+    font-size: 18px;
+    color:#222;
+}
+.header .header_con .header_list li a.header_active{
+	border-bottom: 4px solid #d03d31;
+	color: #CA2E21;
+}
+
+.header .header_btn{
+    height: 62px;
+    line-height: 62px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header .header_btn .login{margin-left: 14px;color:#808080;font-style: normal;}
+.header .header_btn img{ margin-left: 5px;position: relative;top:-5px;}
+
+.header .personal{
+    width: 110px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    top:42px;
+    right:70px;
+    display: none;
+    z-index: 1111;
+}
+.header .personal li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+.header .personal li:last-of-type{border:0;}
+.header .personal li.personal_active{color:#d03d31;}
+.header .personal li img{
+    position: relative;
+    top:3px;
+}
+
+.header .personal li i{
+    position: relative;
+    top:3px;
+}
+.header .personal li.name_t i.red{
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../img/tou_red.png") no-repeat;
+}
+.header .personal li.name_t i.grey{
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../img/tou_grey.png") no-repeat;
+}
+
+.header .personal li.black_s i.red{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/black_red.png") no-repeat;
+}
+.header .personal li.black_s i.grey{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/black_grey.png") no-repeat;
+}
+
+/*β��*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+.footer .footer_con{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 15px 0;
+}
+.footer .footer_con p{
+    width: 1200px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color:#222;
+}
+.footer .footer_con p span{margin: 0 19px;}
+.footer .footer_con p span img{
+	position: relative;
+	top:5px;
+}
+

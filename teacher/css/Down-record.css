@@ -1,0 +1,246 @@
+/**
+ * 下发记录
+ */
+body {
+    font-family: "微软雅黑";
+    background: #f1f1f1;
+    position: relative;
+}
+a,a:visited,a:link,a:hover,a:active {
+    text-decoration:none;
+}
+/*路径导航*/
+.route {
+    width: 1200px;
+    height: 56px;
+    background: #CF3D31;
+    margin: 15px auto;
+}
+.route ul li {
+    float: left;
+    line-height: 56px;
+    font-size: 16px;
+    color: #212121;
+    text-align: center;
+}
+.route ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+}
+.route ul li.current {
+    background: #B33329;
+}
+
+/*主体内容*/
+.container {
+    width: 1200px;
+    margin: 0 auto 25px;
+    overflow: hidden;
+}
+.container .con-left {
+    width: 766px;
+    background: #fff;
+    min-height: 800px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    float: left;
+    padding: 20px 20px 0 20px;
+}
+.container .con-right {
+    width: 362px;
+    background: #fff;
+    min-height: 800px;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    float: right;
+}
+/*时间 list切换*/
+.con-left .conleft-list {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.con-left .conleft-list span {
+    float: left;
+}
+.con-left .conleft-list ul {
+    float: left;
+}
+.con-left .conleft-list ul li {
+    float: left;
+    font-size: 14px;
+    color: #212121;
+}
+.con-left .conleft-list ul li {
+    float: left;
+    width: 52px;
+    height: 22px;
+    margin-left: 15px;
+}
+.con-left .conleft-list ul li a {
+    width: 52px;
+    line-height: 22px;
+    display: block;
+    font-size: 14px;
+    color: #212121;
+    text-align: center;
+}
+.con-left .conleft-list ul li.current a {
+    background: #CF3D31;
+    color: #fff;
+}
+.con-left .conleft-list form div {
+    position: relative;
+}
+.con-left .conleft-list input[type="text"] {
+    width: 222px;
+    height: 36px;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    outline: none;
+    padding-left: 10px;
+    background: url("../img/Personal-resources_sousuo.gif") no-repeat 195px 5px;
+}
+.con-left .conleft-list input[type="submit"] {
+    width: 24px;
+    height: 27px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    opacity: 0;
+}
+/*list 切换内容*/
+.conleft-nav>ul>li {
+    width: 726px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+.conleft-nav>ul>li:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+.conleft-nav ul li div {
+    float: left;
+}
+.conleft-nav ul li div.connav-left {
+    width: 360px;
+}
+.conleft-nav ul li div.connav-right {
+    width: 365px;
+    float: right;
+}
+.connav-right p {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+.connav-right ul {
+    float: left;
+    width: 230px;
+}
+.connav-right ul li {
+    overflow: hidden;
+    white-space:nowrap;
+    width: 230px;
+    height: 18px;
+    text-overflow:ellipsis;
+    margin-bottom: 10px;
+}
+.connav-right ul li a:hover {
+    color: #CF3D31;
+}
+.connav-left>p {
+    font-weight: bold;
+    width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+    overflow: hidden;
+}
+.connav-left>p span a {
+    font-weight: normal;
+}
+.connav-left>p span a:visited {
+    color: #41C7D7;
+}
+.connav-left-nav {
+    width: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.connav-left-nav>p {
+    float: left;
+}
+.connav-left-nav>ul {
+    float: left;
+}
+.connav-left-nav>ul li {
+    margin-bottom: 10px;
+}
+.connav-left-nav>ul li a {
+    width: 83px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    background: #FFf;
+    border: 1px solid #81D36F;
+    color: #222;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.connav-left-nav>ul li a:visited {
+    color: #FFF;
+    background: #81d36f;
+}
+/*主题内容右边*/
+.con-right h3 {
+    width: 362px;
+    color: #212121;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+.con-right .describe {
+    width: 347px;
+    height: 55px;
+    background: #F9F9F9;
+    padding-left:25px;
+    line-height: 27px;
+    color: #201D16;
+}
+.con-right .describe span {
+    width: 70px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    background: url("../img/Personal-resources_yixuexi.png") no-repeat center left;
+}
+.con-right .describe span.weixuexi {
+    background: url("../img/Personal-resources_weixuexi.png") no-repeat center left;
+}
+/*人物简介*/
+.conright-nav {
+    padding: 20px 0 0 20px;
+}
+.conright-nav ul li {
+    width: 114px;
+    margin-bottom: 20px;
+    float: left;
+}
+.conright-nav ul li a {
+    float: left;
+    margin-right: 7px;
+}
+.conright-nav ul li .introduction {
+    float: left;
+}
+.conright-nav ul li .introduction img {
+    float: right;
+    margin-top: 3px;
+}

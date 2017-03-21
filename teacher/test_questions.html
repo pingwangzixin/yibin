@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>课堂测评-试题库</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/classroom.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/jquery.1.8.2.min.js"></script>
+    <script src="common/js/header_footer.js"></script>
+    <script src="common/js/classroom.js"></script>
+    <script src="common/js/jquery.ztree.core.js"></script>
+    <script src="common/js/echarts.min.js"></script>
+</head>
+<body>
+    <!--header start-->
+	<div class="header clearfix">
+        <div class="header_con clearfix">
+            <div class="logo fl">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <ul class="fl header_list clearfix">
+                <li><a href="index-all.html" >首页</a></li>
+                <li><a href="personalresources.html">个人资源中心</a></li>
+                <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
+                <li><a href="classroom_record.html">课堂记录</a></li>
+                <li><a href="downrecord.html">综合分析</a></li>
+            </ul>
+            <div class="header_btn fr">
+                <strong>
+	            	<span>Hi,秦佳琪</span>
+	            	<img src="img/xia_red.png" alt=""/>
+	            	<ul class="personal">
+		                <li class="personal_active name_t">
+		                    <i class="red"></i>
+		                    <span>个人信息</span>
+		                </li>
+		                <li class="black_s">
+		                    <i class="grey"></i>
+		                    <span>退出系统</span>
+		                </li>
+		            </ul>
+	            </strong>
+                <em class="login">[已登录]</em>
+            </div>
+        </div>
+    </div>
+	<!--header end-->
+    <div class="wrapper">
+        <div class="head clearfix">
+            <ul class="nav_list clearfix">
+                <li><a href="test_questions.html" class="nav_list_active">试题库</a></li>
+                <li><a href="school_questions.html">校本题库</a></li>
+                <li><a href="me_questions.html">我的题库</a></li>
+                <li><a href="assembly.html">组卷记录</a></li>
+                <li><a href="my_classroom.html">我的课堂</a></li>
+            </ul>
+            
+            <div class="test_btn clearfix">
+            	<div class="lens fl">
+	                <input type="text" placeholder="请输入题目关键字"/>
+	                <span></span>
+	            </div>
+	            <div class="blue_box fr">
+	            	<img class="test_box" src="img/delete_box.png" alt=""/>
+	                <span>试题篮</span>
+	                <strong class="test_num">10</strong>
+	            </div>
+            </div>
+            
+            <div class="box_car">
+                <ul>
+                    <li class="clearfix">
+                        <span class="name fl">题目名称</span>
+                        <span class="car fr">清空</span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                    <li>
+                        <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                        <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                    </li>
+                </ul>
+                <a href="save_theme.html"><span class="box_car_btn">试卷预览</span></a>
+            </div>
+        </div>
+        <div class="main clearfix">
+            <div class="main_left fl">
+                <div class="box-left">
+					<div class="title"><span>全部资源</span></div>
+					<ul class="ziyuan">
+						<li>
+							<dl class="jiyuan-list">
+								<dt><span>小学</span></dt>
+							</dl>
+							<div class="ziyuan-item">
+								<span></span>
+								<dl>
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					
+						<li>
+							<dl class="jiyuan-list">
+								<dt><span>中学</span></dt>
+							</dl>
+							<div class="ziyuan-item">
+								<span></span>
+								<dl>
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					
+					
+						<li>
+							<dl class="jiyuan-list">
+								<dt><span>高中</span></dt>
+							</dl>
+							<div class="ziyuan-item">
+								<span></span>
+								<dl>
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								
+									<dt><span>语文</span></dt>
+									<dd>
+										<span>语文版</span>
+										<span class="active">语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+										<span>语文书版</span>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+					<div class="catalog">
+						<span >册别及章节列表</span>
+						<img src="img/tree-tishi.png"/>
+						<iframe class="tree" src="common/ztree/ztree.html" style="display: none;" height="819px" width="250px"   scrolling="auto"></iframe>
+					</div>
+				</div>
+            </div>
+
+
+
+            <div class="main_right fr">
+            	<div class="cont-nav2">
+            		<div class="cont-nav-text">
+						<span>小学语文</span>
+						<span class="red"><img src="img/red_next.png" alt="" /></span>
+						<span>小学语文</span>
+					</div>
+            	</div>
+                <div class="classify">
+                    <div class="questions_all">
+                        <div class="questions clearfix">
+                            <div class="questions_l fl">题型 : </div>
+                            <ul class="questions_r  fr clearfix">
+                            	<li class="all_li"><span class="que_active ">全部</span></li>
+                                <li><span>选择题</span><em></em></li>
+                                <li><span>多择题</span><em></em></li>
+                                <li><span>默写</span><em></em></li>
+                                <li><span>填空题</span><em></em></li>
+                                <li><span>现代文阅读</span><em></em></li>
+                                <li><span>文言文阅读</span><em></em></li>
+                                <li><span>诗歌鉴赏</span><em></em></li>
+                                <li><span>语言表达</span><em></em></li>
+                            </ul>
+                        </div>
+                        <div class="questions clearfix">
+                            <div class="questions_l fl">难度 :</div>
+                            <ul class="questions_r fr clearfix">
+                            	<li><span class="que_active ">全部</span></li>
+                                <li><span>困难</span><em></em></li>
+                                <li><span>较难</span><em></em></li>
+                                <li><span>一般</span><em></em></li>
+                                <li><span>较易</span><em></em></li>
+                                <li><span>容易</span><em></em></li>
+                            </ul>
+                        </div>
+                        <div class="questions clearfix">
+                            <div class="questions_l fl">时间 : </div>
+                            <ul class="questions_r fr clearfix">
+                            	<li><span class="que_active ">全部</span></li>
+                                <li><span>2016</span><em></em></li>
+                                <li><span>2015</span><em></em></li>
+                                <li><span>2014</span><em></em></li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="sub_ques">
+                    <div class="sub_ques_line clearfix">
+                        <div class="sub_ques_line_l fl">
+                            <ul class="clearfix">
+                                <li>题型 : <span>语言表达</span></li>
+                                <li>难度 : <span>一般</span></li>
+                                <li>日期 : <span>2016.4.23</span></li>
+                                <li class="blue">[组卷次数：<span>2</span>]</li>
+                            </ul>
+                            <p>知识点：表达运用（仿写  继写  拟写标语  广告词等）</p>
+                            <h4>来源 : <span>XXXXXXXXXXXXXX</span></h4>
+                            
+                            <div class="test_pic">
+                                <h3>[题文]</h3>
+                                <div class="tiwen_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                            <div class="test_an">
+                            	<h3 class="orange">[答案]</h3>
+                                <div class="daan_con">
+                                	A
+                                </div>
+                                <h3 class="orange">[解析]</h3>
+                                <div class="jiexi_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="sub_ques_line_r fr">
+                            <span class="btn jia">+ 加入试题蓝</span>
+                            
+                            <div class="collection">
+                                <img src="img/star.png" alt=""/>
+                                <span class="yellow">已收藏</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_ques_line clearfix">
+                        <div class="sub_ques_line_l fl">
+                            <ul class="clearfix">
+                                <li>题型 : <span>语言表达</span></li>
+                                <li>难度 : <span>一般</span></li>
+                                <li>日期 : <span>2016.4.23</span></li>
+                                <li class="blue">[组卷次数：<span>2</span>]</li>
+                            </ul>
+                            <p>知识点：表达运用（仿写  继写  拟写标语  广告词等）</p>
+                            <h4>来源 : <span>XXXXXXXXXXXXXX</span></h4>
+                            <div class="test_pic">
+                                <h3>[题文]</h3>
+                                <div class="tiwen_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                            <div class="test_an">
+                            	<h3 class="orange">[答案]</h3>
+                                <div class="daan_con">
+                                	A
+                                </div>
+                                <h3 class="orange">[解析]</h3>
+                                <div class="jiexi_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_ques_line_r fr">
+                            <span class="btn jia">+ 加入试题蓝</span>
+                            <div class="collection">
+                                <img src="img/star.png" alt=""/>
+                                <span class="shoucang">收藏</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_ques_line clearfix">
+                        <div class="sub_ques_line_l fl">
+                            <ul class="clearfix">
+                                <li>题型 : <span>语言表达</span></li>
+                                <li>难度 : <span>一般</span></li>
+                                <li>日期 : <span>2016.4.23</span></li>
+                                <li class="blue">[组卷次数：<span>2</span>]</li>
+                            </ul>
+                            <p>知识点：表达运用（仿写  继写  拟写标语  广告词等）</p>
+                            <h4>来源 : <span>XXXXXXXXXXXXXX</span></h4>
+                            <div class="test_pic">
+                                <h3>[题文]</h3>
+                                <div class="tiwen_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                            <div class="test_an">
+                            	<h3 class="orange">[答案]</h3>
+                                <div class="daan_con">
+                                	A
+                                </div>
+                                <h3 class="orange">[解析]</h3>
+                                <div class="jiexi_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_ques_line_r fr">
+                            <span class="btn jia">+ 加入试题蓝</span>
+                            <div class="collection">
+                                <img src="img/star.png" alt=""/>
+                                <span class="shoucang">收藏</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_ques_line clearfix">
+                        <div class="sub_ques_line_l fl">
+                            <ul class="clearfix">
+                                <li>题型 : <span>语言表达</span></li>
+                                <li>难度 : <span>一般</span></li>
+                                <li>日期 : <span>2016.4.23</span></li>
+                                <li class="blue">[组卷次数：<span>2</span>]</li>
+                            </ul>
+                            <p>知识点：表达运用（仿写  继写  拟写标语  广告词等）</p>
+                            <h4>来源 : <span>XXXXXXXXXXXXXX</span></h4>
+                            <div class="test_pic">
+                                <h3>[题文]</h3>
+                                <div class="tiwen_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                            <div class="test_an">
+                            	<h3 class="orange">[答案]</h3>
+                                <div class="daan_con">
+                                	A
+                                </div>
+                                <h3 class="orange">[解析]</h3>
+                                <div class="jiexi_con">
+                                	北京捷成世纪科技股份有限公司及其前身北京捷成世纪科技发展有限公司长期致力于音视频领域的信息技术创新应用，注册资本为人民币4,200万元，位于中关村国家自主创新示范区，是北京市科学技术委员会认定的软件企业，是北京市科学技术委员会、北京市财政局、北京市国家税务局和北京市地方税务局联合认定的高新技术企业，是科学技术部、中国科学院和北京人民政府联合认定的创新型试点企业
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_ques_line_r fr">
+                            <span class="btn jia">+ 加入试题蓝</span>
+                            <div class="collection">
+                                <img src="img/star.png" alt=""/>
+                                 <span class="shoucang">收藏</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page clearfix">
+                    <p class="fl">
+                        共<span>12</span>页，<span>128</span>题
+                    </p>
+                    <p class="page_r fr">
+                        <img src="img/jiaru.png" alt=""/>
+                        <span>将本页试题全部加入</span>
+                    </p>
+                </div>
+                <ul class="page_btn clearfix">
+                    <li><img src="img/prev.png" alt=""/></li>
+                    <li>1</li>
+                    <li class="page_btn_active">2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li><img src="img/next.png" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 提示-->
+	<div class="del_down del_down2" style="display: none">
+	    <div class="hide"></div>
+	    <div class="con">
+	        <img src="img/dui.png">
+	        <span class="text-text">取消成功</span>
+	    </div>
+	</div>
+    <!--foot start-->
+		<div class="footer">
+	        <div class="footer_con">
+	            <p class="footer_firm">
+	                <span>主办：宜宾市教育体育局</span>
+	                <span>承办：宜宾市新宜集团</span>
+	                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+	            </p>
+	            <p class="footer_phone">
+	                <span>&copy;2016  宜宾市智慧教育云平台</span>
+	                <span>联系电话：0831—83500071</span>
+	                <span>
+	                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+	                		<img src="img/beian.png" alt="" />
+	                		川公网安备1150202000002号
+	                	</a>
+	                </span>
+	            </p>
+	        </div>
+	    </div>
+	<!--foot end-->
+</body>
+</html>

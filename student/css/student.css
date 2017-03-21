@@ -1,0 +1,411 @@
+/*************************************  首页   *****************************************/
+body{
+	background: url(../img/personal_bg.jpg);
+}
+
+/*导航条*/
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+header nav {
+    width: 1200px;
+    height: 36px;
+    margin: 0px auto;
+}
+header nav span {
+    color: #732B23;
+    line-height: 36px;
+    margin-left: 10px;
+}
+header nav .header-right {
+    float: right;
+}
+header nav .header-right a {
+    /*line-height: 36px;
+    margin: 0 15px;*/
+    color: #742b23;
+}
+.info_show_set img:hover{
+	cursor: pointer;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.head{
+	width:1200px;height: 36px;
+	line-height: 36px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.head_btn{text-align: right;}
+
+
+/*首页*/
+.sy_main{
+	width: 100%;
+	padding: 30px 0;
+}
+.sy_box{
+	width:1100px;
+	height:867px;
+	background: url(../img/sy_main.png) no-repeat;
+	    background-size: 1100px;
+	text-align: center;
+	margin:auto;
+	position: relative;
+}
+.sy_box .box_name,.sy_box  .box_cycle{
+	width: 146px;
+	height: 120px;
+	position: absolute;
+	top:111px;
+	color:#fff;
+}
+.sy_box .box_name{
+	left:30px;
+}
+.sy_box  .box_cycle{
+	right:25px;
+}
+.sy_box .box_name p{
+	width: 146px;
+	text-indent: 15px;
+	line-height: 28px;
+	text-align: left;
+}
+.sy_box  .box_cycle p{
+	width: 146px;
+	text-indent: 15px;
+	text-align: left;
+	padding-top: 10px;
+}
+.sy_box  .box_cycle p strong{
+	font-size:66px;
+	position:relative;
+	top:-6px;
+}
+.sy_box  .box_cycle p em{
+	position:relative;
+	top:-8px;
+	margin-left: 5px;
+}
+.sy_box .box_main{
+	position: absolute;
+	top:344px;left:78px;
+	margin-right: -80px;
+}
+.sy_box .box_main li{
+	float: left;
+	margin-right: 80px;
+	cursor: pointer;
+	position: relative;
+}
+
+.sy_box .box_main li:hover .pen{
+	top:0;
+	background: url(../img/orange_box.png) no-repeat;
+}
+
+.sy_box .box_main li:hover .shadow{
+	top:0;
+	background: url(../img/orange_bottom.png) no-repeat;
+}
+
+
+.sy_box .box_main li .pen{
+	width: 267px;
+	height: 334px;
+	background: url(../img/green_box.png) no-repeat;
+	position:relative;
+	top:35px;
+}
+.sy_box .box_main li .shadow{
+	width: 266px;
+	height: 78px;
+	background: url(../img/green_bottom.png) no-repeat;
+}
+
+.sy_box .box_main li .pen h3{
+	/*font-size: 24px;
+	color: #fff;  
+	-webkit-text-stroke: 1px #993333; 
+	font-family: "微软雅黑";*/
+	position: absolute;
+	top:95px;
+	left:100px;
+}
+.sy_box .box_main li:nth-child(1) .pen h3{
+	width: 102px;
+	height: 29px;
+	background: url(../img/tit_yx.png) no-repeat;
+}
+.sy_box .box_main li:nth-child(2) .pen h3{
+	width: 102px;
+	height: 29px;
+	background: url(../img/tit_fx.png) no-repeat;
+}
+.sy_box .box_main li:nth-child(3) .pen h3{
+	width: 80px;
+	height: 28px;
+	background: url(../img/tit_zs.png) no-repeat;
+}
+.sy_box .box_main li .pen .font{
+	width: 230px;
+    position: absolute;
+    margin-top: 10px;
+    top: 142px;
+    left: 22px;
+}
+.sy_box .box_main li .pen .font p{
+	font-size: 24px;
+	color:#fff;
+	line-height: 32px;
+	margin-top: 8px;
+}
+
+
+
+/*导航*/
+.person .nav{
+	width: 860px;
+	margin: 0 auto;
+	padding: 0 170px;
+}
+.person .nav li{
+	width: 152px;
+    height: 100px;
+    padding-top: 20px;
+    float: left;
+    margin-right: 84px;
+    cursor: pointer;
+}
+.person .nav li:last-of-type{margin-right: 0;}
+.person .nav li.nav_active{
+	background: url(../img/tit_bg.png) no-repeat 5px 2px;
+}
+/*电视背景*/
+.person .tv{
+	width: 1100px;
+	height: 731px;
+	background: url(../img/TV_bg.png) no-repeat;
+	text-align: center;
+	margin:auto;
+	position: relative;
+}
+.person .tv .tv_box{width: 770px;position: absolute;top:112px;left:12px;}
+
+
+/*内容导航*/
+.person .tv .tv_box .info{
+	width: 224px;
+	height: 564px;
+	margin-right: 30px;
+}
+.person .tv .tv_box .info li{
+	width: 216px;
+	height: 64px;
+	background: url(../img/tv_green_big.png) no-repeat;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+.person .tv .tv_box .info li img{
+	position: relative;
+	top:18px;
+}
+
+.person .tv .tv_box .info li.info_active{
+	background: url(../img/tv_orange_big.png) no-repeat;
+}
+
+/***************************************    基本信息   ****************************************/
+/*内容展示*/
+.person .tv .tv_box .info_show{
+	width: 500px;
+	height: 564px;
+	position: relative;
+	color: #993333;
+	top:-6px;
+}
+
+/*笔*/
+.person .tv .tv_box .info_show_basic .my_data .pen{
+	position: relative;
+	top:10px;
+}
+
+/*资料信息展示*/
+.person .tv .tv_box .info_show_basic .data_line{
+	width: 446px;
+}
+.person .tv .tv_box .info_show_basic .data_line .tit{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 5px;
+	border-bottom: 1px solid #993333;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.person .tv .tv_box .info_show_basic .data_line .tit em{
+	display: inline-block;
+	width: 92px;
+	height: 40px;
+	background: url(../img/tv_green_small.png) no-repeat;
+	position: relative;
+	top:10px;
+}
+.person .tv .tv_box .info_show_basic .data_line .tit em img{position: absolute;top:10px;left:28px;}
+
+.person .tv .tv_box .info_show_basic .data_line .con li{
+	line-height: 36px;
+	text-align: left;
+}
+/*账户安全*/
+.person .tv .tv_box .info_show_basic .data_line .debits{
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 8px;
+}
+.person .tv .tv_box .info_show_basic .data_line .debits em{
+	width: 92px;
+	height: 40px;
+	background: url(../img/tv_green_small.png) no-repeat;
+}
+.person .tv .tv_box .info_show_basic .data_line .debits em img{
+	position: relative;
+	top:4px;
+}
+
+/*头像*/
+.person .tv .head_img{
+	width: 252px;
+    height: 289px;
+    background: url(../img/tv.png) no-repeat;
+    position: absolute;
+    right: 33px;
+    top: -12px;
+}
+.person .tv .head_img img{
+	display: block;
+    position: relative;
+    top: 88px;
+    left: 23px;
+    width: 210px;
+    height: 157px;
+    border-radius: 33px 66px 35px 41px;
+}
+
+
+
+/***************************************    我的资料   ****************************************/
+.info_show_data{
+	padding-top: 20px;
+}
+.info_show_data .data_list{
+	text-align: left;
+	color:#993333;
+	font-size: 16px;
+}
+.info_show_data .data_list li{line-height: 57px;}
+.info_show_data .data_list li span{font-weight: bold;}
+.info_show_data .data_list li em{margin-right: 40px;}
+.info_show_data .data_list li strong{color:#ff6666;font-size: 14px;}
+	
+.info_show_data .data_list li select{
+	width: 116px;
+	height: 26px;
+	border:2px solid #996666;
+	border-radius: 6px;
+	outline: none;
+}
+
+.info_show_data .data_list li i{
+	border:2px solid #996666;
+	border-radius: 6px;
+	padding: 0 3px;
+}
+
+.info_show_data  .data_btn,.info_show_set .data_btn{
+	width: 166px;
+	height: 60px;
+	background: url(../img/tv_green_middle.png) no-repeat;
+	margin: 40px 0 0 144px;
+}
+
+.info_show_data  .data_btn img,.info_show_set .data_btn img{
+	position: relative;
+	top:16px;
+}
+
+
+/***************************************    账户安全   ****************************************/
+
+.info_show_safety .safety{
+	width: 660px;
+	height: 123px;
+	background: url(../img/safety_bg.png) no-repeat;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.info_show_safety .safety img{
+	margin: 35px 0 0 20px;
+}
+.info_show_safety .safety img.cha{
+    margin: 35px 20px 0px 40px;
+}
+.info_show_safety .safety .font {
+	margin: 24px 0 0 20px;
+}
+.info_show_safety .safety .font p{
+	line-height: 38px;	
+}
+.info_show_safety .safety .font p:nth-child(1){
+	color:#99cc66;
+	font-size: 16px;
+}
+.info_show_safety .safety .font p:nth-child(2){
+	color:#336633;
+	font-size: 13px;
+}
+.info_show_safety .safety .font p.font_red{color:#f9a681;}
+.info_show_safety .safety .btn{
+	width: 117px;
+	height: 52px;
+	background: url(../img/safety_small.png) no-repeat;
+	margin: 34px  20px 0 0px;
+}
+.info_show_safety .safety .btn img{
+	position: relative;
+	top:-20px;
+	left:4px;
+}
+
+
+
+
+
+
+
+/***************************************    系统设置   ****************************************/
+.info_show_set{
+	padding-top:20px;
+}
+.info_show_set  p{
+	margin-bottom: 64px;
+	text-align: left;
+	color:#742b23;
+	font-size: 16px;
+	font-weight: bold;
+	padding-right: 100px;
+}
+.info_show_set  p:last-of-type{
+	margin-bottom:0 ;
+}	
+.info_show_set  p span{
+	height: 32px;
+	line-height: 32px;
+}

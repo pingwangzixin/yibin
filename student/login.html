@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <style>
+        body {
+            height: auto;
+            font-family: "微软雅黑", Arial, sans-serif;
+            color: #212121;
+            font-size: 16px;
+            background: #fff;
+            position: relative;
+        }
+        header {
+            width: 100%;
+            background: #FFFCF4;
+        }
+        header nav {
+            width: 1200px;
+            height: 90px;
+            margin: 0 auto;
+        }
+        header nav .miaoshu {
+            font-size: 22px;
+            color: #4D4D4B;
+            line-height: 90px;
+            margin-right: 670px;
+        }
+        header nav .sichuan,header nav .yibin {
+
+            font-size: 16px;
+            color: #202020;
+            cursor: pointer;
+            line-height: 90px;
+            float: right;
+        }
+        header nav .yibin {
+            margin-right: 20px;
+        }
+        header nav .yibin:hover {
+            color: #CF3D31;
+        }
+        header nav .sichuan {
+            cursor: pointer;
+        }
+        header nav .sichuan:hover {
+            color: #CF3D31;
+        }
+        .container {
+            width: 100%;
+            height: 600px;
+            background: url("img/ditu2.jpg") no-repeat;
+        }
+        .container .container-nav {
+            position: relative;
+            width: 1200px;
+            height: 650px;
+            margin: 0 auto;
+            padding-top: 76px;
+        }
+        .container-nav-right {
+            margin-right: 30px;
+            float: right;
+            width: 419px;
+            background: #FFF;
+            overflow: hidden;
+        }
+        .container-nav-right .container-list {
+            overflow: hidden;
+        }
+        .container-nav-right .container-list li {
+            float: left;
+            width: 209px;
+            border-top: 3px solid #fff;
+            line-height: 75px;
+            text-align: center;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .container-nav-right .container-list li.current-student {
+            border-top: 3px solid #5DB5E5;
+            color: #6BA1E7;
+        }
+        .container-nav-right .container-list li.current {
+            border-top: 3px solid #CF3D31;
+            color: #CF3D31;
+        }
+        .container-nav-right .container-teacher {
+            width: 338px;
+            margin: 0 auto;
+        }
+        .container-nav-right .container-teacher input.mima,.container-nav-right .container-teacher input.username {
+            width: 280px;
+            height: 55px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            margin-bottom: 31px;
+            padding-left: 50px;
+            background: url("img/iconfont-yonghuming.png") no-repeat 19px center;
+        }
+        .container-nav-right .container-teacher input.mima {
+            background: url("img/iconfont-mima.png") no-repeat 19px center;
+        }
+        .container-nav-right .container-teacher p {
+            float: right;
+            font-size: 14px;
+            color: #555555;
+        }
+        .container-nav-right .container-teacher p.jizhu {
+
+        }
+        .container-nav-right .container-teacher p input.remember {
+            vertical-align: middle;
+            margin: -3px 3px 0 0;
+        }
+        .container-nav-right .container-teacher input.submit {
+            width: 330px;
+            height: 48px;
+            margin: 5px auto 45px;
+            border: none;
+            background: #CF3D31;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 10px;
+        }
+        footer {
+            width: 100%;
+            height: 122px;
+            background: #FFFCF4;
+        }
+        .footer-nav {
+            width: 980px;
+            height: 88px;
+            padding-top: 30px;
+            margin: 0 auto ;
+        }
+        .footer-nav .chengban {
+            margin: 0 150px ;
+        }
+        .footer-nav .zhuban {
+            color: #24A7CC;
+        }
+        .footer-nav span {
+            color: #7A7976;
+        }
+        .footer-nav p {
+            display: block;
+            width: 590px;
+            margin: 20px auto;
+        }
+        .footer-nav .dianhua {
+            margin-left: 20px;
+        }
+        .xuanzhexuexiao {
+            width: 332px;
+            height: 105px;
+        }
+        .xuanzhexuexiao input {
+            width: 156px;
+            height: 55px;
+            border: 1px solid #ccc;
+            outline: none;
+            background: #fff;
+            border-radius: 10px;
+            color: #212121;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .xuanzhexuexiao input.quxian {
+            margin-right: 20px;
+        }
+        /*选择学校 弹窗*/
+        .select-school {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -148px 0 0 -291px;
+            width: 594px;
+            height: 296px;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .select-school p.biaoti {
+            width: 571px;
+            height: 35px;
+            background: #bb372b;
+            border-radius: 10px 10px 0 0;
+            line-height: 35px;
+            padding-left: 23px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .select-school p.biaoti img {
+            float: right;
+            margin: 13px 20px 0 0;
+            cursor: pointer;
+        }
+        .select-school p.dingwei {
+            margin: 15px 0 0 32px;
+            line-height: 20px;
+        }
+        .select-school p.dingwei img {
+            vertical-align: middle;
+            margin: -5px 15px 0 0;
+        }
+        .select-school .school {
+            margin: 25px 0 0 63px;
+            overflow: hidden;
+        }
+        .select-school .school li {
+            float: left;
+            margin: 0 27px 20px 0;
+        }
+        .select-school .school li input {
+            width: 73px;
+            height: 28px;
+            outline: none;
+            border: none;
+            background: #fff;
+            cursor: pointer;
+        }
+        .select-school .school li input.active {
+            color: #fff;
+            background: #bb372a;
+        }
+        .select-school .school li input.active-student {
+            color: #fff;
+            background: #FCB88E;
+        }
+        .select-school .confirm {
+            width: 250px;
+            height: 30px;
+            margin: 0 auto;
+        }
+        .select-school .confirm input {
+            width: 103px;
+            height: 29px;
+            border: 1px solid #ccc;
+            background: #fff;
+            font-size: 14px;
+        }
+        .select-school .confirm input.confirm-submit {
+            background: #bb372a;
+            color: #fff;
+            border: 1px solid #bb372a;
+            margin-right: 44px;
+        }
+        .container-nav-right .container-teacher input.submit-student {
+            background: #31f251;
+        }
+        .select-school .confirm input.confirm-submit-student {
+            background: #FCB88E;
+            color: #fff;
+            border: 1px solid #FCB88E;
+            margin-right: 44px;
+        }
+
+        /*管理员登录*/
+        .aministrator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+        .administrator-login {
+            position: absolute;
+            top: 49px;
+            right: 31px;
+            width:100px;
+            padding-right: 18px;
+            text-align: right;
+            background: url("img/administrator.png") no-repeat center right;
+            cursor: pointer;
+            color: #fff;
+        }
+        .aministrator-main {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-top: -229px;
+            margin-left: -286px;
+            width: 573px;
+            height: 458px;
+            background: #fff;
+            border-radius: 8px;
+        }
+        .aministrator-main .admain-center {
+            width: 450px;
+            height: 280px;
+            margin: 35px auto 0;
+        }
+        .admain-center p {
+            line-height: 30px;
+            font-size: 16px;
+            color: #636D77;
+        }
+        .admain-center p input.admain-username,.admain-center p input.admain-password {
+            width: 410px;
+            height: 53px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #cdd1dd;
+            padding-left: 40px;
+            background: url("img/data.png") no-repeat 15px center;
+        }
+        .admain-center p input.admain-password {
+            background: url("img/account.png") no-repeat 15px center;
+        }
+        .admain-center .admain-alertname,.admain-center .admain-alertpass {
+            visibility: hidden;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: red;
+            font-size: 14px;
+
+        }
+        .submit {
+            float: right;
+            width: 159px;
+            height: 45px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+            background: #3BC1C3;
+            border-radius: 5px;
+        }
+        .guanbi2 {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            cursor: pointer;
+        }
+        .container-nav-left {
+            width: 463px;
+            height: 400px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--导航-->
+<header>
+    <nav>
+        <span class="miaoshu">宜宾智慧教育云平台</span>
+        <span class="sichuan"><a href=""></a>四川教育网</span>
+        <span class="yibin">宜宾教育体育网</span>
+    </nav>
+</header>
+<!--内容-->
+<div class="container">
+    <div class="container-nav">
+        <img class="container-nav-left" src="img/image2.png" alt=""/>
+        <p class="administrator-login">管理员登录</p>
+        <div class="container-nav-right">
+            <ul class="container-list">
+                <li class="list-teacher current">教师版</li>
+                <li class="list-student ">学生版</li>
+            </ul>
+            <!--教师登录-->
+            <div class="container-teacher teacher">
+                <form action="">
+                    <p><input class="username" type="text" name="username" placeholder="请输入用户名"/></p>
+                    <p><input class="mima" type="text" name="password" placeholder="请输入密码"/></p>
+                    <p class="jizhu"><input class="remember" type="checkbox" name="remember-password"/>记住密码</p>
+                    <input class="submit" type="submit" value="登录"/>
+                </form>
+            </div>
+            <!--学生登录-->
+            <div class="container-teacher student" style="display: none">
+                <form action="">
+                    <p><input class="username" type="text" name="username" placeholder="请输入用户名"/></p>
+                    <p><input class="mima" type="text" name="password" placeholder="请输入密码"/></p>
+                    <p class="xuanzhexuexiao"><input class="quxian" type="button" value="选择区/县"/><input class="xuexiao" type="button" value="选择学校"/></p>
+                    <p>
+                        <label>
+                            <input class="remember" type="checkbox" name="remember-password"/>记住密码
+                        </label>
+                    </p>
+                    <input class="submit submit-student" type="submit" value="登录"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+<!--选择学校 弹窗-->
+<div class="select-school" style="display: none">
+    <p class="biaoti">选择学校 <img class="guanbi" src="img/cha.png" alt=""/></p>
+    <form action="">
+        <p class="dingwei"><img src="img/dingwei.png" alt=""/>您当前位于：<span>四川省宜宾市</span></p>
+        <ul class="school">
+            <li><input class="active" type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+        </ul>
+        <p class="confirm"><input class="confirm-submit" type="submit" value="确认"/><input class="quxiao" type="reset" value="取消"/></p>
+    </form>
+</div>
+<!--选择区县-->
+<div class="select-school select-school-xuanze" style="display: none">
+    <p style="background: #FCB88E" class="biaoti">选择区/县 <img class="guanbi" src="img/cha.png" alt=""/></p>
+    <form action="">
+        <p class="dingwei"><img src="img/dingwei.png" alt=""/>您当前位于：<span>四川省宜宾市</span></p>
+        <ul class="school">
+            <li><input class="active-student" type="button" value="南溪区"/></li>
+            <li><input type="button" value="南溪区"/></li>
+            <li><input type="button" value="南溪区"/></li>
+            <li><input type="button" value="南溪区"/></li>
+            <li><input type="button" value="南溪区"/></li>
+            <li><input type="button" value="南溪区"/></li>
+        </ul>
+        <p class="confirm"><input class="confirm-submit-student" type="submit" value="确认"/><input class="quxiao" type="reset" value="取消"/></p>
+    </form>
+</div>
+<!--选择学校-->
+<div class="select-school select-school-student" style="display: none">
+    <p style="background: #FCB88E" class="biaoti">选择学校 <img class="guanbi" src="img/cha.png" alt=""/></p>
+    <form action="">
+        <p class="dingwei"><img src="img/dingwei.png" alt=""/>您当前位于：<span>四川省宜宾市</span></p>
+        <ul class="school">
+            <li><input class="active-student" type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+            <li><input type="button" value="第一中学"/></li>
+        </ul>
+        <p class="confirm"><input class="confirm-submit-student" type="submit" value="确认"/><input class="quxiao" type="reset" value="取消"/></p>
+    </form>
+</div>
+<!--管理员登录 弹窗-->
+<div class="aministrator" style="display: none">
+    <div class="aministrator-main">
+        <img src="img/gaunli.png" alt=""/>
+        <img class="guanbi2" src="img/guanbi2.png" alt=""/>
+        <div class="admain-center">
+            <form action="">
+                <p>用户名</p>
+                <p><input class="admain-username" placeholder="请输入用户名" type="text"/></p>
+                <p class="admain-alertname">用户名错误</p>
+                <p>密码</p>
+                <p><input class="admain-password" placeholder="请输入密码" type="text"/></p>
+                <p class="admain-alertpass">密码错误</p>
+                <p><span><input type="checkbox"/>记住密码</span><span><input class="submit" type="button" value="登录"/></span></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="common/js/jquery.1.8.2.min.js"></script>
+<script src="common/js/login.js"></script>
+<script>
+    $(function(){
+        $(".administrator-login").click(function(){
+            $(".aministrator").show();
+        })
+        $(".guanbi2").click(function(){
+            $(".aministrator").hide();
+        })
+        function yanzheng(obj,hide){
+            $(obj).blur(function(){
+                if($(obj).val()==""){
+                    $(hide).css("visibility","inherit");
+                }
+                else{
+                    $(hide).css("visibility","hidden");
+                }
+            })
+        }
+        yanzheng(".admain-username",".admain-alertname");
+        yanzheng(".admain-password",".admain-alertpass");
+    });
+</script>
+</html>

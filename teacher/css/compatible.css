@@ -1,0 +1,24 @@
+/*火狐*/
+@-moz-document url-prefix(){
+	.box-right table tbody th,.box-right table tbody td{
+		border-color:#ebebeb;
+	}	
+	.issued .modify-resources nav .nav-container>div.current input{
+		margin-right: 5px;
+		position: relative;
+		top:2px;
+	}
+	.cont-body li .text .title{height:35px;}
+	.cont-body li:hover span.title{
+		height:42px;
+	}
+}
+
+/*苹果*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.box-right table tbody th,.box-right table tbody td{
+		border-color:#ebebeb;
+	}
+	.assembly .form_table table tbody tr td a{margin-right: 20px;}
+}
+

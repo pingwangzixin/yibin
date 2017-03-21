@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<script src="laydate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="J-xl-4" style="display: none;"></div>	
+	</body>
+	<script type="text/javascript">
+	function rili_Y (Y) {
+		console.log(Y);
+	}
+	function rili_M (m) {
+		console.log(m);
+	}
+	function rili_D (d) {
+		console.log(d);
+	}
+		window.onload = function(){
+			laydate({
+				elem: '#J-xl-4',
+				choose: function(datas,obj){ 
+					$("td:not(.laydate_click)").css("background-color","")
+					$(obj).css("background-color","#cdeaff");/*点击以后的背景色*/
+			    }
+			});
+			document.getElementById("J-xl-4").click();
+		}
+	</script>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>课堂测评-创建试题</title>
+    <link rel="stylesheet" href="css/reset_creat.css"/>
+    <link rel="stylesheet" href="css/classroom.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/jquery.1.8.2.min.js"></script>
+    <script src="common/js/header_footer.js"></script>
+    <script src="common/js/classroom.js"></script>
+    <script src="common/js/jquery.ztree.core.js"></script>
+    <script src="common/js/echarts.min.js"></script>
+    <script src="common/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+		CKEDITOR.replace('TextArea1');
+	</script>
+</head>
+<body>
+<div class="header">
+    <div class="header_con clearfix">
+        <div class="logo fl">
+            <img src="img/logo.png" alt=""/>
+        </div>
+        <ul class="fl header_list">
+            <li><a href="index-all.html" >首页</a></li>
+            <li><a href="personalresources.html">个人资源中心</a></li>
+            <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
+            <li><a href="classroom_record.html">课堂记录</a></li>
+            <li><a href="downrecord.html">综合分析</a></li>
+        </ul>
+        <div class="header_btn fr">
+            <strong>
+            	<span>Hi,秦佳琪</span>
+            	<img src="img/xia_red.png" alt=""/>
+            	<ul class="personal">
+	                <li class="personal_active name_t">
+	                    <i class="red"></i>
+	                    <span>个人信息</span>
+	                </li>
+	                <li class="black_s">
+	                    <i class="grey"></i>
+	                    <span>退出系统</span>
+	                </li>
+	            </ul>
+            </strong>
+            <em class="login">[已登录]</em>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="create">
+        <div class="create_head clearfix">
+            <p class="fl">创建试题</p>
+            <a class="fr" href="me_questions.html"><img src="img/red_next.png" alt=""/> 返回我的题库</a>
+        </div>
+        <div class="create_con">
+            <div class="all_input">
+                <p class="xueduan">
+                    <span>
+                        <i> * </i>学段 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                    <span>
+                        <i> * </i>学科 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                    <span>
+                        <i> * </i>题目 ：
+                        <select>
+                            <option value="">多选题</option>
+                            <option value="">单选题</option>
+                            <option value="">阅读文</option>
+                        </select>
+                    </span>
+                    <span>
+                        认知水平 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="nanyi">
+                    <i> * </i>难易度 ：
+                    <span><input type="radio" name="nanyi"/> 困难</span>
+                    <span><input type="radio" name="nanyi"/> 较难</span>
+                    <span><input type="radio" name="nanyi"/> 一般</span>
+                    <span><input type="radio" name="nanyi"/> 较易</span>
+                    <span><input type="radio" name="nanyi"/> 容易</span>
+                </p>
+                <p class="banben">
+                    <span>
+                        <i> * </i>教材版本 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                    <span>
+                        <i> * </i>单元选择 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                    <span>
+                        <i> * </i>节选择 ：
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </span>
+                </p>
+            </div>
+            <div class="subject">
+                <div class="tit clearfix">
+                    <h4 class="fl">题文 : </h4>
+                    <span class="fr"><img src="img/jiaru_white.png" alt=""/> 添加小题</span>
+                </div>
+                <div id="qstShowwqyan" contenteditable="true" class="ckeditorCustom cke_editable cke_editable_inline cke_contents_ltr into" style="min-height: 150px; position: relative;" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, qstShowwqyan" title="所见即所得编辑器, qstShowwqyan" aria-describedby="cke_47">请输入内容</div>
+                
+                <!-- 多选题 ---- 点击上面下拉选择什么题型相应的模块让其显示出来 -->
+               	<div class="small_topic_much" style="display: block;">
+	               	<div class="tit clearfix">
+	                    <h4 class="fl">小题1 : </h4>
+	                </div>
+	                <p style="padding: 15px 0 0 20px;">题目 : <span></span></p>
+	                <div id="qstShowwqyan" contenteditable="true" class="ckeditorCustom cke_editable cke_editable_inline cke_contents_ltr into" style="min-height: 150px; position: relative;" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, qstShowwqyan" title="所见即所得编辑器, qstShowwqyan" aria-describedby="cke_47">请输入内容</div>
+	                <span class="daan_num">
+	                    答案个数 ：
+	                    <select>
+	                        <option value="">1</option>
+	                        <option value="">2</option>
+	                        <option value="">3</option>
+	                    </select>
+	                </span>
+	                <p class="daan_line">
+	                    答案 ：
+	                    <span><input type="checkbox" />A</span>
+	                    <span><input type="checkbox" />B</span>
+	                    <span><input type="checkbox" />C</span>
+	                    <span><input type="checkbox" />D</span>
+	                </p>
+               	</div>
+               	<!-- 单选题  ---- 点击上面下拉选择什么题型相应的模块让其显示出来-->
+               	<div class="small_topic_single" style="display: none;">
+	               	<div class="tit clearfix">
+	                    <h4 class="fl">小题1 : </h4>
+	                </div>
+	                <p style="padding: 15px 0 0 20px;">题目 : <span></span></p>
+	                <div id="qstShowwqyan" contenteditable="true" class="ckeditorCustom cke_editable cke_editable_inline cke_contents_ltr into" style="min-height: 150px; position: relative;" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, qstShowwqyan" title="所见即所得编辑器, qstShowwqyan" aria-describedby="cke_47">请输入内容</div>
+	                <span class="daan_num">
+	                    答案个数 ：
+	                    <select>
+	                        <option value="">1</option>
+	                        <option value="">2</option>
+	                        <option value="">3</option>
+	                    </select>
+	                </span>
+	                <p class="daan_line">
+	                    答案 ：
+	                    <span><input type="radio" name="single"/>A</span>
+	                    <span><input type="radio" name="single"/>B</span>
+	                    <span><input type="radio" name="single"/>C</span>
+	                    <span><input type="radio" name="single"/>D</span>
+	                </p>
+               	</div>
+               	<!-- 现代文阅读---- 点击上面下拉选择什么题型相应的模块让其显示出来  -->
+               	<div class="small_topic_read" style="display: none;">
+	               	<div class="tit clearfix">
+	                    <h4 class="fl">小题1 : </h4>
+	                </div>
+	                <p style="padding: 15px 0 0 20px;">题目 : <span></span></p>
+	                <div id="qstShowwqyan" contenteditable="true" class="ckeditorCustom cke_editable cke_editable_inline cke_contents_ltr into" style="min-height: 150px; position: relative;" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, qstShowwqyan" title="所见即所得编辑器, qstShowwqyan" aria-describedby="cke_47">请输入内容</div>
+	                <textarea class="read_answer">答案 ：</textarea>
+               	</div>
+               	
+                <div class="tit clearfix">
+                    <h4 class="fl">题文 : </h4>
+                </div>
+                <div id="qstShowwqyan" contenteditable="true" class="ckeditorCustom cke_editable cke_editable_inline cke_contents_ltr into" style="min-height: 150px; position: relative;" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, qstShowwqyan" title="所见即所得编辑器, qstShowwqyan" aria-describedby="cke_47">请输入内容</div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="create_con_btn">
+                <a class="red_bg">保存题目</a>
+                <a href="me_questions.html" class="blue_bg">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--foot start-->
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+<!--foot end-->
+</body>
+</html>

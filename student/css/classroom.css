@@ -1,0 +1,238 @@
+body {
+  background: url(../img/body-bg.png);
+}
+.box {
+  width: 1200px;
+  margin: 0px auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+a:link {
+  text-decoration: none;
+  color: #8b5852;
+}
+a:visited {
+  text-decoration: none;
+  color: #8b5852;
+}
+
+/*导航条*/
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+header nav {
+    width: 1200px;
+    height: 36px;
+    margin: 0px auto 30px;
+}
+header nav span {
+    color: #732B23;
+    line-height: 36px;
+    margin-left: 10px;
+}
+header nav .header-right {
+    float: right;
+}
+header nav .header-right a {
+    line-height: 36px;
+    margin: 0 15px;
+}
+
+.nav {
+  width: 1100px;
+  margin: 0px auto;
+  height: 540px;
+  background: url(../img/nav.png) no-repeat;
+  background-position-y: 40px;
+  text-align: center;
+}
+.nav .nav-tit {
+  margin: 20px 118px 0px;
+  height: 83px;
+}
+.nav .nav-tit a {
+  display: block;
+  float: left;
+  width: 156px;
+  height: 63px;
+  margin-left: 76px;
+  padding-top: 20px;
+}
+.nav .nav-tit a:first-of-type {
+  margin: 0px;
+}
+.nav .nav-tit a.active {
+  background: url(../img/nat-tit-bg.png) no-repeat;
+  background-position-x: 9px;
+}
+.nav-con{
+	padding-top: 10px;
+}
+.nav dl {
+  padding: 0px;
+  margin-top: 10px ;
+  padding-left: 104px;
+}
+.nav dl:before,
+.nav dl:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.nav dt {
+  margin-right: 126px;
+  width: 385px;
+  height: 385px;
+  float: left;
+}
+.nav dt iframe {
+  border: 0px;
+}
+.nav dd {
+  width: 380px;
+  height: 380px;
+  float: left;
+}
+.nav dd td {
+  width: 82px;
+  height: 40px;
+}
+.nav dd td:first-of-type {
+  width: 58px;
+  border: 0px;
+  background-color: #ebebeb;
+}
+.nav dd td.active {
+  background-color: rgb(205, 234, 255);
+}
+.nav dd table {
+  border: 0px;
+}
+.nav dd p {
+  font-size: 12px;
+  text-align: left;
+  margin: 8px;
+}
+.nav dd .sel {
+  margin-top: 10px;
+  height: 20px;
+}
+.nav dd .sel:before,
+.nav dd .sel:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.nav dd .sel dl {
+  padding: 0px;
+  width: 145px;
+  margin-left: 30px;
+  border: 0px;
+  float: left;
+}
+.nav dd .sel dt {
+  float: left;
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+  border: 1px solid #dddddd;
+  width: 20px;
+  height: 20px;
+}
+.nav dd .sel dt.have {
+  background-color: rgb(205, 234, 255);
+}
+.nav dd .sel dd {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: initial;
+  border: 0px;
+  color: #4f5f6f;
+}
+.cont {
+  text-align: center;
+  width: 1100px;
+  margin: 5px auto 47px;
+  height: 807px;
+  background: url(../img/cont-bg.png) no-repeat;
+}
+.cont p {
+  line-height: 33px;
+  color: #742b23;
+}
+.cont .table {
+  height: 645px;
+  width: 550px;
+  margin: 30px auto 0px;
+}
+.cont .table .hide img{
+	margin-top: 30px;
+}
+.cont .table table {
+  border: 0px;
+}
+.cont .table td {
+  height: 64px;
+}
+.cont .table th {
+	background-color: #EBEBEB;
+	font-size: 16px;
+  height: 50px;
+}
+.cont .table th.l {
+  width: 145px;
+}
+.cont .table th.c {
+  width: 235px;
+}
+.cont .table th.r {
+  width: 170px;
+}
+.cont .table span {
+  margin: 12px;
+  color: #222;
+}
+.cont .table span:hover{
+  text-decoration: underline;
+  color: #5ea6d9;
+}
+
+/*next page*/
+.next_page .hide{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #000;
+	opacity: 0.4;
+}
+.next_page .show{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -621px;
+	margin-top: -299px;
+	width: 1242px;
+	height: 598px;
+	background: #fff;
+}
+.next_page .show .tit{
+	margin-left: 20px;
+}
+.next_page .show .tit img{
+	cursor: pointer;
+	float: right;
+}
+.next_page .show .vedio{
+	height: 540px;
+	width: 1200px;
+	background-color: #DDDDDD;
+	margin: auto;
+}

@@ -1,0 +1,56 @@
+/*
+*404页面不存在
+*/
+body {
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+.nav {
+    width: 1198px;
+    height: 670px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    margin: 20px auto;
+    vertical-align: middle;
+    position: relative;
+}
+.nav-center {
+    width: 747px;
+    height: 257px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -128px;
+    margin-left: -373px;
+}
+.nav-center .navcenter-img {
+    width: 228px;
+    height: 258px;
+    float: left;
+    background: url("../img/lion.gif") no-repeat;
+}
+.nav-center .describe {
+    width: 470px;
+    height: 139px;
+    float: right;
+    margin-top: 70px;
+}
+.nav-center .describe h1 {
+    font-size: 24px;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+.nav-center .describe p {
+    font-size: 14px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    margin-top: 15px;
+}
+.nav-center .describe a {
+    display: block;
+    width: 184px;
+    background: #CF3D31;
+    color: #fff;
+    margin:  30px 0 0 133px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 47px;
+}

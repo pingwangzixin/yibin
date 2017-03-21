@@ -1,0 +1,105 @@
+﻿﻿html{font-family:"微软雅黑",Arial,sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+}
+body {
+  background:#f1f1f1;
+  color:#222;
+  font-size:14px;
+}
+em,i{font-style: normal;}
+td,th,caption {
+  font-size:14px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+  font-size:100%;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style:normal;
+  font-weight:normal;
+}
+a {
+  color:#222;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:none;
+}
+img {
+  border:none;
+}
+ol,ul,li {
+  list-style:none;
+}
+input, textarea, select, button {
+  font:14px "微软雅黑",Arial,sans-serif;
+}
+table {
+  border-collapse:collapse;
+}
+/* css common */
+.clearfix:after {
+  content: " ";
+  display: block;
+  height:0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom:1;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+/*提示框*/
+#dvMsgBox{
+	
+	    display: none;
+    position: absolute;
+    height: 226px;
+    font-size: 12px;
+    width: 300px;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #ffffff;
+    font-family: 微软雅黑;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}  
+#dvMsgBox .top{height:40px; background-color:#bb372c; float:left; width:100%;}  
+#dvMsgBox .top .right{height:100%;}  
+#dvMsgBox .top .right .title{text-align:left;height:100%;padding-left:16px;line-height:40px;color:#fff;vertical-align:middle;font-size:14px;overflow:hidden;}  
+#dvMsgBox .body{background:#fff;padding-left:10px;}  
+#dvMsgBox .body .right{background:#fff;padding-right:2px;}  
+#dvMsgBox .body .right .ct{  
+	  vertical-align: middle;
+    width: 100%;
+    line-height: 161px;
+    height: 161px;
+    text-align: center;
+    color: #222222;
+    font-size: 14px;
+  }  
+#dvMsgBox .body .right .ct .pro{width:280px;border:solid 1px #6593cf;height:25px;background:#ffffff;line-height:23px;overflow:hidden;}  
+#dvMsgBox .body .right .ct .pro .bg{width:0%;height:100%;background:#c9dffc;}  
+#dvMsgBox .bottom{background:#fff;padding-left:6px;}  
+#dvMsgBox .bottom .right{height:100%;/*background:transparent url(right-corners.png) no-repeat right bottom;*/padding-right:6px;}  
+input.btn{width:106px;   border-radius: 3px; font-family:微软雅黑; cursor:pointer; color:#fff; border:none; height:30px; text-align:center;  background-color:#D03D31;text-align:center; margin:0px auto;outline: none;}  
+
+.btn-btn input:nth-child(3){background: #fff;border:1px solid #ebebeb;color:#222;margin-left: 40px;}
+.btn-btn input:nth-child(3):hover{border-color: #ccc;}
+.btn-btn input:nth-child(2):hover{background-color: #b33329;}
+
+input.btnfocus{ background-color:#D03D31; font-family:微软雅黑;   border-radius: 3px;width:106px;margin:0px auto; border:none; height:30px; cursor:pointer; color:#fff;}  
+
+#dvMsgBox .icon{width:32px;height:32px;float:left;margin-right:10px;}  
+#dvMsgBox .error{background:url(icon-error.gif) no-repeat;}  
+#dvMsgBox .info{background:url(icon-info.gif) no-repeat;}  
+#dvMsgBox .warning{background:url(icon-warning.gif) no-repeat;}  
+#dvMsgBox .clear{clear:both;}  
+#dvMsgBox .height{height:10px;line-height:10px;}  
+#YiBinlightBox{display:none;-moz-opacity:0.5;filter:alpha(opacity=30);opacity:0.3;background-color:#000;z-index:100;position:absolute;left:0px;top:0px;}
+#dvMsgBtns{ text-align:center; width:100%;}

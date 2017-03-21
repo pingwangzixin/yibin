@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>课堂测评-我的课堂</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/classroom.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/jquery.1.8.2.min.js"></script>
+    <script src="common/js/header_footer.js"></script>
+    <script src="common/js/classroom.js"></script>
+    <script src="common/js/jquery.ztree.core.js"></script>
+    <script src="common/js/echarts.min.js"></script>
+</head>
+<body>
+    <!--header start-->
+	<div class="header clearfix">
+        <div class="header_con clearfix">
+            <div class="logo fl">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <ul class="fl header_list clearfix">
+                <li><a href="index-all.html" >首页</a></li>
+                <li><a href="personalresources.html">个人资源中心</a></li>
+                <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
+                <li><a href="classroom_record.html">课堂记录</a></li>
+                <li><a href="downrecord.html">综合分析</a></li>
+            </ul>
+            <div class="header_btn fr">
+                <strong>
+	            	<span>Hi,秦佳琪</span>
+	            	<img src="img/xia_red.png" alt=""/>
+	            	<ul class="personal">
+		                <li class="personal_active name_t">
+		                    <i class="red"></i>
+		                    <span>个人信息</span>
+		                </li>
+		                <li class="black_s">
+		                    <i class="grey"></i>
+		                    <span>退出系统</span>
+		                </li>
+		            </ul>
+	            </strong>
+                <em class="login">[已登录]</em>
+            </div>
+        </div>
+    </div>
+	<!--header end-->
+    <div class="wrapper">
+        <div class="head clearfix">
+            <ul class="nav_list clearfix">
+                <li><a href="test_questions.html">试题库</a></li>
+                <li><a href="school_questions.html">校本题库</a></li>
+                <li><a href="me_questions.html">我的题库</a></li>
+                <li><a href="assembly.html">组卷记录</a></li>
+                <li><a href="my_classroom.html" class="nav_list_active">我的课堂</a></li>
+            </ul>
+        </div>
+
+        <div class="center">
+            <div class="box-left">
+                <div class="tit"><span>日期: 2015-4-24</span></div>
+                <div class="rili">
+					<iframe src="common/package/laydate/laydate.html" width="400px" height="380px"></iframe>
+				</div>
+                <div class="class-list">
+                    <dl>
+                        <dt><span>早上</span></dt>
+                        <dd><span>1</span><span class="active">2</span><span>1</span><span>2</span></dd>
+                        <dt><span>上午</span></dt>
+                        <dd><span>1</span><span class="active">2</span><span>1</span><span>2</span></dd>
+                        <dt><span>下午</span></dt>
+                        <dd><span>1</span><span class="active">2</span><span>1</span><span>2</span></dd>
+                        <dt><span>晚上</span></dt>
+                        <dd><span>1</span><span class="active">2</span><span>1</span><span>2</span></dd>
+                    </dl>
+                    <div class="text">
+                        <p>注释：点击有测验的日期和具体课堂,查看右侧的该课堂测试结果</p>
+                        <div class="sel">
+                            	<em></em>当天有测验
+                            	<em></em>当天无测验
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <p>@ 我的课堂为记录教师当天课程课堂所下发的测验结果，还原课堂现场</p>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="tit"><span class="active">测试一</span><span>测试二</span></div>
+                <div class="content-body">
+                    <table border="" cellspacing="" cellpadding="">
+                        <tr>
+                            <th class="f">试题名称</th>
+                            <th class="c">选项</th>
+                            <th class="l">操作</th>
+                        </tr>
+                        <tr>
+                            <td>七年级：数学七年级华师大版七年级下册;第七章二元一次方程组</td>
+                            <td>100</td>
+                            <td><span class="doing">查看统计</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>七年级：数学七年级华师大版七年级下册;第七章二元一次方程组</td>
+                            <td>100</td>
+                            <td><span class="doing">查看统计</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>七年级：数学七年级华师大版七年级下册;第七章二元一次方程组</td>
+                            <td>100</td>
+                            <td class="doing">查看统计</td>
+                        </tr>
+
+                        <tr>
+                            <td>七年级：数学七年级华师大版七年级下册;第七章二元一次方程组</td>
+                            <td>100</td>
+                            <td><span class="doing">查看统计</span></td>
+                        </tr>
+                    </table>
+                    <div class="text">
+                        <div class="text-tit">
+                            <span>详情</span>
+                            <div class="icon">
+                                <span class="icon-add"></span>
+                                <span class="icon-minus"></span>
+                                <span class="icon-res"></span>
+                                <span class="icon-del"></span>
+                                <span class="icon-save"></span>
+                            </div>
+                        </div>
+                        <div class="count" id="count"></div>
+
+                        <div class="rate">
+                            <span class="answer">正确答案 : <strong>A</strong></span>
+                            <span class="rate_num">正确率 : <strong>65%</strong></span>
+                            <span class="subject">查看题目</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mask class_mask">
+	        <div class="mask_box">
+	            <div class="mask_head clearfix">
+	                <h4 class="fl">试题</h4>
+	                <img class="fr close" src="img/close.png" alt=""/>
+	            </div>
+	            <div class="mask_pic">
+	                <h5> <h4>题目：</h4> <span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+	                <ul class="clearfix"> 
+	                	<h3>答案:</h3>
+	                	<li>A.的房间是的</li>
+	                	<li>A.是的发送到</li>
+	                	<li>A.阿是范德萨</li>
+	                	<li>A.爱的发萨菲</li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+    <!--foot start-->
+		<div class="footer">
+	        <div class="footer_con">
+	            <p class="footer_firm">
+	                <span>主办：宜宾市教育体育局</span>
+	                <span>承办：宜宾市新宜集团</span>
+	                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+	            </p>
+	            <p class="footer_phone">
+	                <span>&copy;2016  宜宾市智慧教育云平台</span>
+	                <span>联系电话：0831—83500071</span>
+	                <span>
+	                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+	                		<img src="img/beian.png" alt="" />
+	                		川公网安备1150202000002号
+	                	</a>
+	                </span>
+	            </p>
+	        </div>
+	    </div>
+	<!--foot end-->
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>课堂测评-组卷记录</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/classroom.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/jquery.1.8.2.min.js"></script>
+    <script src="common/js/header_footer.js"></script>
+    <script src="common/js/classroom.js"></script>
+    <script src="common/js/jquery.ztree.core.js"></script>
+    <script src="common/js/echarts.min.js"></script>
+    <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!--header start-->
+	<div class="header clearfix">
+        <div class="header_con clearfix">
+            <div class="logo fl">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <ul class="fl header_list clearfix">
+                <li><a href="index-all.html" >首页</a></li>
+                <li><a href="personalresources.html">个人资源中心</a></li>
+                <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
+                <li><a href="classroom_record.html">课堂记录</a></li>
+                <li><a href="downrecord.html">综合分析</a></li>
+            </ul>
+            <div class="header_btn fr">
+                <strong>
+                	<span>Hi,秦佳琪</span>
+                	<img src="img/xia_red.png" alt=""/>
+                	<ul class="personal">
+		                <li class="personal_active name_t">
+		                    <i class="red"></i>
+		                    <span>个人信息</span>
+		                </li>
+		                <li class="black_s">
+		                    <i class="grey"></i>
+		                    <span>退出系统</span>
+		                </li>
+		            </ul>
+                </strong>
+                <em class="login">[已登录]</em>
+            </div>
+        </div>
+    </div>
+<!--header end-->
+<div class="wrapper">
+    <div class="head clearfix">
+        <ul class="nav_list clearfix">
+            <li><a href="test_questions.html">试题库</a></li>
+            <li><a href="school_questions.html">校本题库</a></li>
+            <li><a href="me_questions.html">我的题库</a></li>
+            <li><a href="assembly.html" class="nav_list_active">组卷记录</a></li>
+            <li><a href="my_classroom.html">我的课堂</a></li>
+        </ul>
+        <div class="test_btn clearfix">
+        	<div class="lens fl">
+                <input type="text" placeholder="请输入题目关键字"/>
+                <span></span>
+            </div>
+            <div class="blue_box fr">
+            	<img class="test_box" src="img/delete_box.png" alt=""/>
+                <span>试题篮</span>
+                <strong class="test_num">10</strong>
+            </div>
+        </div>
+        <div class="box_car">
+            <ul>
+                <li class="clearfix">
+                    <span class="name fl">题目名称</span>
+                    <span class="car fr">清空</span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+            </ul>
+            <a href="save_theme.html"><span class="box_car_btn">试卷预览</span></a>
+        </div>
+    </div>
+    <div class="main assembly">
+        <div class="assembly_head">
+            时间 :
+            <span class="assembly_head_active">全部</span>
+            <span>今天</span>
+            <span>昨天</span>
+            <span>本周</span>
+            <span>本月</span>
+        </div>
+        <div class="form_table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>试卷来源</td>
+                        <td>试卷名称</td>
+                        <td>试卷状态</td>
+                        <td>更新时间</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td>课堂已测验</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                    <tr>
+                        <td>组卷</td>
+                        <td class="name">123</td>
+                        <td class="green">未使用</td>
+                        <td>2014-06-24  15:32:03</td>
+                        <td><a class="look" href="save_as_theme.html">修改试卷</a><a class="del">删除</a><a>下载试卷</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul class="page_btn clearfix">
+            <li><img src="img/prev.png" alt=""/></li>
+            <li>1</li>
+            <li class="page_btn_active">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li><img src="img/next.png" alt=""/></li>
+        </ul>
+    </div>
+</div>
+<!--foot start-->
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+<!--foot end-->
+</body>
+</html>

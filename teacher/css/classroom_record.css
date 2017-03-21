@@ -1,0 +1,339 @@
+@charset "utf-8";
+body {
+  background-color: #f1f1f1;
+  font-family: "微软雅黑";
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.center {
+  margin:15px auto 25px;
+  width: 1200px;
+  min-height: 800px;
+}
+.center:before,
+.center:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.box-left {
+  width: 590px;
+  height: 900px;
+  background-color: #FFFFFF;
+  float: left;
+}
+.box-left:before,
+.box-left:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.box-left .foot {
+  background-color: #f9f9f9;
+  padding-top: 22px;
+  margin-top: 166px ;
+  font-size: 12px;
+  text-align: center;
+  height: 38px;
+  color:#abaaab;
+}
+.box-right {
+  width: 590px;
+  height: 900px;
+  border: 1px solid transparent;
+  background-color: #FFFFFF ;
+  float: right;
+}
+.tit {
+  height: 56px;
+  line-height: 56px;
+  padding-left: 30px;
+  border-bottom: 1px solid #dddddd;
+  background-color: #d03d31;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.rili {
+  margin-top: 30px;
+  margin-left: 108px;
+}
+.rili iframe {
+  border: 0px;
+}
+.rili iframe body {
+  margin: 0px;
+}
+.class-list {
+  width: 377px;
+  height: 160px;
+  margin-left: 108px;
+  margin-top: 20px ;
+  border: 1px solid #dddddd;
+  border-left:0;
+  border-bottom:0;
+  text-align: center;
+}
+.class-list dl:before,
+.class-list dl:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.class-list dt {
+  width: 57px;
+  float: left;
+  height: 390x;
+  line-height: 39px;
+  background-color: #ebebeb;
+}
+.class-list dt span {
+  width: 57px;
+}
+.class-list span {
+  width: 79px;
+  display: block;
+  height: 390x;
+  line-height: 39px;
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  float: left;
+}
+.class-list span.active {
+  background-color: #cdeaff;
+}
+.class-list .text {
+  padding-top: 10px;
+}
+.class-list .sel {
+  margin-top: 10px;
+}
+.class-list .sel div{
+	float: left;
+}
+.class-list .sel span {
+    margin-left: 30px;
+    margin-top: 5px;
+		margin-right: 5px; 
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    position: relative;
+    top:-6px;
+}
+.class-list .sel div:first-of-type span{
+	 background-color: #CDEAFF;
+}
+.class-list .foot {
+  background-color: #f9f9f9;
+  padding-top: 14px;
+  margin-top: 130px ;
+  font-size: 12px;
+  height: 38px;
+}
+.box-right table{
+	border: 0px;
+	margin: 32px 24px 0px;
+}
+.box-right table p{
+	height: 30px;
+}
+.box-right table span{
+	margin: 5px;
+	color: #222;
+	cursor: pointer;
+}
+.box-right table span:hover{color:#5EA6D9;}
+.box-right th{
+	height: 50px;
+	background-color: #ebebeb;
+}
+.box-right th.l{
+	width: 140px;
+}
+.box-right th.c{
+	width: 235px;
+}
+.box-right th.r{
+	width: 160px;
+}
+.box-right td{
+	text-align: center;
+	height: 64px;
+	line-height: 64px;
+}
+/*第二页*/
+
+.next_page .hidden{
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: #000;
+	opacity:0.4;
+	filter:alpha(opacity=40); 
+}
+.next_page .show{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -620px;
+    margin-top: -300px;
+    z-index: 1111;
+    width: 1240px;
+    height: 600px;
+    background-color: #FFFFFF;
+}
+.next_page .show .show-tit{
+	margin-left: 22px;
+	height: 30px;
+	line-height: 30px;
+}
+.next_page .show .show-tit img{
+	float: right;
+	margin: 5px;
+	cursor: pointer;
+}
+.next_page .show .show-video{
+	width: 1203px;
+	height: 544px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+}
+
+
+/*---------------------header and foot*/
+
+
+
+/*ͷ��*/
+.header{
+    width: 100%;
+    height: 62px;
+    background: #fff;
+}
+.header .header_con{
+    width: 1200px;
+    margin: 0 auto;
+    height: 62px;
+    position: relative;
+}
+.header .header_con .logo{
+    margin: 8px 112px 0 48px;
+}
+.header .header_con .header_list li{
+    float: left;
+}
+.header .header_con .header_list li a{
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    margin: 0 30px;
+    font-size: 18px;
+    color:#222;
+}
+.header .header_con .header_list li a.header_active{
+	border-bottom: 4px solid #d03d31;
+	color: #CA2E21;
+}
+
+.header .header_btn{
+    height: 62px;
+    line-height: 62px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header .header_btn .login{margin-left: 14px;color:#808080;}
+.header .header_btn img{ margin-left: 5px;position: relative;top:-5px;}
+
+.header .personal{
+    width: 110px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    top:42px;
+    right:70px;
+    display: none;
+    z-index: 999;
+}
+.header .personal li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+.header .personal li:last-of-type{border:0;}
+.header .personal li.personal_active{color:#d03d31;}
+.header .personal li img{
+    position: relative;
+    top:3px;
+}
+
+.header .personal li i{
+    position: relative;
+    top:3px;
+}
+.header .personal li.name_t i.red{
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../img/tou_red.png") no-repeat;
+}
+.header .personal li.name_t i.grey{
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../img/tou_grey.png") no-repeat;
+}
+
+.header .personal li.black_s i.red{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/black_red.png") no-repeat;
+}
+.header .personal li.black_s i.grey{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/black_grey.png") no-repeat;
+}
+
+/*β��*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+.footer .footer_con{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 15px 0;
+}
+.footer .footer_con p{
+    width: 1200px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color:#222;
+}
+.footer .footer_con p span{margin: 0 19px;}
+.box-right table tbody th,.box-right table tbody td{
+		border-color:#ebebeb;
+}

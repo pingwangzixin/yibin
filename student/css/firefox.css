@@ -1,0 +1,10 @@
+@-moz-document url-prefix(){
+	
+	.box .nav-tit a.active,.nav .nav-tit a.active{
+		background-position: 9px 0px;
+	}
+	.prepared_nav {    background-position: 0px 40px;}
+	.box .nav {    background-position:0px 40px;}
+	.container-nav .box .nav {background-position:0px;}
+	th,td{border-color: rgb(238, 238, 238);}
+}

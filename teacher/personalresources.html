@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资源中心</title>
+    <link rel="stylesheet" href="css/reset.css"/> <!--css初始化-->
+    <link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/personal-resources.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<!--导航条-->
+<div class="header clearfix">
+    <div class="header_con clearfix">
+        <div class="logo fl">
+            <img src="img/logo.png" alt=""/>
+        </div>
+        <ul class="fl header_list clearfix">
+            <li><a href="index-all.html" >首页</a></li>
+                <li><a href="personalresources.html" class="header_active">个人资源中心</a></li>
+                <li><a href="test_questions.html" >课堂评测</a></li>
+                <li><a href="classroom_record.html">课堂记录</a></li>
+                <li><a href="downrecord.html">综合分析</a></li>
+        </ul>
+        <div class="header_btn fr">
+            <strong>
+            	<span>Hi,秦佳琪</span>
+            	<img src="img/xia_red.png" alt=""/>
+            	<ul class="personal">
+	                <li class="personal_active name_t">
+	                    <i class="red"></i>
+	                    <span>个人信息</span>
+	                </li>
+	                <li class="black_s">
+	                    <i class="grey"></i>
+	                    <span>退出系统</span>
+	                </li>
+	            </ul>
+            </strong>
+            <em class="login">[已登录]</em>
+        </div>
+    </div>
+</div>
+<!--路径导航-->
+<div class="route">
+    <ul>
+        <li class="current" ><a href="personalresources.html">全部资源</a></li>
+        <li><a href="uploadresources.html">上传资源</a></li>
+        <li><a href="downrecord.html">下发记录</a></li>
+    </ul>
+</div>
+<!--主体内容-->
+<container class="container">
+    <!--主题内容 左侧-->
+    <div class="left">
+        <iframe src="common/ztree/ztree.html" width="250px" height="100%" frameborder="0"></iframe>
+    </div>
+    <!--主题内容 右侧-->
+    <div class="right">
+        <!--主题内容 右侧 路径导航 -->
+        <div class="path-navigation">
+            <ul>
+                <li><a href="javascript:;">小学语文（人教版）三年级上册</a></li>
+                <li>
+                    <img src="img/Personal-resources_path-navigation.gif" alt=""/>
+                    <a href="javascript:;">第一章</a>
+                </li>
+                <li>
+                    <img src="img/Personal-resources_path-navigation.gif" alt=""/>
+                    <a href="javascript:;">金色的草地</a>
+                </li>
+            </ul>
+        </div>
+        <!--主题内容 右侧 table栏切换 -->
+        <div class="tab-switch">
+            <div class="investment_f clearfix">
+                <!--主题内容 右侧 table栏切换 list导航-->
+                <div class="investment_title">
+                    <div class="on">我上传的<span>（61条）</span></div>
+                    <div>我收藏的<span>（41条）</span></div>
+                </div>
+                <!--主题内容 右侧 table栏切换 侧边《下载 删除》按钮-->
+                <div class="investment_btn">
+                    <ul>
+                        <li><a class="xiafa" href="javascript:;">下发至学生</a></li>
+                        <li>
+                            <img src="img/Personal-resources_dowmload.png" alt=""/>
+                            <a id="download" href="javascript:;">下载</a>
+                        </li>
+                        <li>
+                            <img src="img/Personal-resources_delete.png" alt=""/>
+                            <a id="delete" href="javascript:;">删除</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主题内容 右侧 table栏切换 list切换内容-->
+                <div class="investment_con">
+                    <div class="investment_con_one">
+                        <table>
+                            <tr>
+                                <th class="core-name">资源名称</th>
+                                <th>资源操作</th>
+                                <th>资源大小</th>
+                                <th>上传时间</th>
+                                <th>资源公开</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<input id="checkebox1" type="checkbox" value=""/>
+                                	<label for="checkebox1">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
+                                <td>20M</td>
+                                <td>2016-03-10</td>
+                                <td class="gongkai">公开至资源库</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<input id="checkebox2" type="checkbox" value=""/>
+                                	<label for="checkebox2">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
+                                <td>20M</td>
+                                <td>2016-03-10</td>
+                                <td class="yigongkai">已公开</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<input id="checkebox3" type="checkbox" value=""/>
+                                	<label for="checkebox3">
+                                		B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）</label>
+                                </td>
+                                <td>
+                                	<a href="resourceview.html">
+                                		<span class="abc-span">
+                                			<img class="abc123" src="img/abc123_03.png" alt=""/>查看
+                                		</span>
+                                	</a>
+                                	<span class="bianji"><img src="img/Personal-resources_bianji1.png" alt=""/>编辑</span>
+                                </td>
+                                <td>20M</td>
+                                <td>2016-03-10</td>
+                                <td class="daigongkai">待审核</td>
+                            </tr>
+                        </table>
+                        <!--主题内容 右侧 table栏切换 分页-->
+                        <div class="investment_paging">
+                            <ul class="pagination-clean">
+                                <li class="previous-off"><a href="javascript:;">«</a></li>
+                                <li><a class="active" href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li style="text-align: center">...</li>
+                                <li><a href="javascript:;">7</a></li>
+                                <li class="next"><a href="javascript:;">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="investment_con_list">
+                        <table>
+                            <tr>
+                                <th class="list-name2">资源名称</th>
+                                <th>资源操作</th>
+                                <th>资源来源</th>
+                                <th>资源大小</th>
+                                <th>上传时间</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<input id="shoucang1" type="checkbox" value=""/>
+                                	<label for="shoucang1">B-11-八年级-语文-上-小狮子（01）B-11-八年级-语文-上-小狮子（01）B-11-八年级-</label>
+                                </td>
+                                <td>
+                                	<img src="img/abc123_03.png" alt=""/><a class="look" href="resourceview.html">查看</a>
+                                </td>
+                                <td>
+                                	<img src="img/Personal-resources_xiaoben.png" alt=""/>校本资源库
+                                </td>
+                                <td>20M</td>
+                                <td>2016-03-10</td>
+                            </tr>
+                        </table>
+                        <!--主题内容 右侧 table栏切换 分页-->
+                        <div class="investment_paging">
+                            <ul class="pagination-clean">
+                                <li class="previous-off"><a href="javascript:;">«</a></li>
+                                <li><a class="active" href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li style="text-align: center">...</li>
+                                <li><a href="javascript:;">7</a></li>
+                                <li class="next"><a href="javascript:;">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</container>
+<!--修改资源信息 弹窗-->
+<div class="modify" style="display: none">
+    <div class="modify-resources" >
+        <div class="top">
+            <ul>
+                <li>修改资源信息</li>
+                <li><a href="javascript:;"><img src="img/Personal-resources_close.gif" alt=""/></a></li>
+            </ul>
+        </div>      
+        <nav>
+            <form action="">
+                <div class="nav-top">
+                    <p>资源名称：</p>
+                    <input type="text"/></li>
+                </div>
+                <div class="clearfix tab">
+		        	<span class="tabactive">素材</span>
+		        	<span>课件</span>
+		        	<span>教学设计</span>
+		        	<span>习题</span>
+		        	<span>其他</span>
+		        </div>
+                <div class="nav-selest">
+                    <span>请选择：</span>
+                    <select>
+                        <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option>八年级</option>
+                        <option>九年级</option>
+                    </select>
+                    <select>
+                        <option>教材</option>
+                        <option>政治八年级下册</option>
+                        <option>政治九年级下册</option>
+                    </select>
+                    <select>
+                        <option>学科版本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option>第二单元</option>
+                        <option>第三单元</option>
+                    </select>
+                </div>
+                <div class="nav-selest">
+                    <span>请选择章节：</span>
+                    <select>
+                        <option>字段&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option>八年级</option>
+                        <option>九年级</option>
+                    </select>
+                    <select>
+                        <option>教材</option>
+                        <option>政治八年级下册</option>
+                        <option>政治九年级下册</option>
+                    </select>
+                    <select>
+                        <option>学科版本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option>第二单元</option>
+                        <option>第三单元</option>
+                    </select>
+                    <select>
+                        <option>学科版本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option>第二单元</option>
+                        <option>第三单元</option>
+                    </select>
+                </div>
+                <p>关键字：  <span>历史</span> <span>练习题</span> <span>第四单元</span></p>
+                <div class="describe">
+                    <span>资源描述：</span>
+                    <p>你是几年级的学生呢，你学习情况怎么样呢！你是几年级的学生呢，你学习情况怎么样你
+                        你是几年级的学生呢，你学习情况怎么样你你是几年级的学生呢，你学习情况怎么样你你是几年级的
+                        你是几年级的学生呢，你学习情况怎么样你学生呢，你学习情况怎么样你
+                    </p>
+                </div>
+                <ul class="clearfix btns">
+                    <li><input type="submit" value="确认"/></li>
+                    <li><input class="modify-cancel" type="reset" value="取消"/></li>
+                </ul>
+            </form>
+        </nav>
+    </div>
+</div>
+<!--下发至学生 弹窗-->
+<div class="issued" style="display: none">
+    <div class="modify-resources" >
+        <div class="top">
+            <ul>
+                <li>下发至学生</li>
+                <li><a href="javascript:;"><img src="img/Personal-resources_close.gif" alt=""/></a></li>
+            </ul>
+        </div>
+        <nav>
+            <form action="" method="post">
+                <div class="nav-top">
+                    <ul>
+                        <li><p>输入名称：</p></li>
+                        <li><input type="text" placeholder="  例：2015年02月15日    下发资源（一）"/></li>
+                    </ul>
+                </div>
+                <!--下发至学生 切换list-->
+                <div class="nav-list">
+                    <ul>
+                        <li class="current">三年级一班</li>
+                        <li>三年级二班</li>
+                        <li>三年级三班</li>
+                        <li>三年级四班</li>
+                        <li>三年级四班</li>
+                    </ul>
+                </div>
+                <!--下发至学生 切换内容-->
+                <div class="nav-container">
+                    <div class="current">
+                        <input class="checkedAll" id="checkedAll" type="checkbox" value="全选／取消全选"/><label id="quanxuan2" for="checkedAll">全选／取消全选</label>
+                        <ul>
+                            <li><input id="check_test1" type="checkbox" value=""/><label for="check_test1">孙雨凯</label></li>
+                            <li><input id="check_test2" type="checkbox" value=""/><label for="check_test2">孙雨凯</label></li>
+                            <li><input id="check_test3" type="checkbox" value=""/><label for="check_test3">孙雨凯</label></li>
+                            <li><input id="check_test4" type="checkbox" value=""/><label for="check_test4">孙雨凯</label></li>
+                            <li><input id="check_test5" type="checkbox" value=""/><label for="check_test5">孙雨凯</label></li>
+                            <li><input id="check_test6" type="checkbox" value=""/><label for="check_test6">孙雨凯</label></li>
+                            <li><input id="check_test7" type="checkbox" value=""/><label for="check_test7">孙雨凯</label></li>
+                            <li><input id="check_test8" type="checkbox" value=""/><label for="check_test8">孙雨凯</label></li>
+                            <li><input id="check_test9" type="checkbox" value=""/><label for="check_test9">孙雨凯</label></li>
+                            <li><input id="check_test10" type="checkbox" value=""/><label for="check_test10">孙雨凯</label></li>
+                            <li><input id="check_test11" type="checkbox" value=""/><label for="check_test11">孙雨凯</label></li>
+                            <li><input id="check_test12" type="checkbox" value=""/><label for="check_test12">孙雨凯</label></li>
+                            <li><input id="check_test13" type="checkbox" value=""/><label for="check_test13">孙雨凯</label></li>
+                            <li><input id="check_test14" type="checkbox" value=""/><label for="check_test14">孙雨凯</label></li>
+                            <li><input id="check_test15" type="checkbox" value=""/><label for="check_test15">孙雨凯</label></li>
+                            <li><input id="check_test16" type="checkbox" value=""/><label for="check_test16">孙雨凯</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input class="checkedAll" id="select2" type="checkbox" value="全选／取消全选"/><label for="select2">全选／取消全选</label>
+                        <ul>
+                            <li><input id="check2_test1" type="checkbox" value=""/><label for="check2_test1">孙雨凯1</label></li>
+                            <li><input id="check2_test2" type="checkbox" value=""/><label for="check2_test2">孙雨凯1</label></li>
+                            <li><input id="check2_test3" type="checkbox" value=""/><label for="check2_test3">孙雨凯1</label></li>
+                            <li><input id="check2_test4" type="checkbox" value=""/><label for="check2_test4">孙雨凯1</label></li>
+                            <li><input id="check2_test5" type="checkbox" value=""/><label for="check2_test5">孙雨凯1</label></li>
+                            <li><input id="check2_test6" type="checkbox" value=""/><label for="check2_test6">孙雨凯1</label></li>
+                            <li><input id="check2_test7" type="checkbox" value=""/><label for="check2_test7">孙雨凯1</label></li>
+                            <li><input id="check2_test8" type="checkbox" value=""/><label for="check2_test8">孙雨凯1</label></li>
+                            <li><input id="check2_test9" type="checkbox" value=""/><label for="check2_test9">孙雨凯1</label></li>
+                            <li><input id="check2_test10" type="checkbox" value=""/><label for="check2_test10">孙雨凯1</label></li>
+                            <li><input id="check2_test11" type="checkbox" value=""/><label for="check2_test11">孙雨凯1</label></li>
+                            <li><input id="check2_test12" type="checkbox" value=""/><label for="check2_test12">孙雨凯1</label></li>
+                            <li><input id="check2_test13" type="checkbox" value=""/><label for="check2_test13">孙雨凯1</label></li>
+                            <li><input id="check2_test14" type="checkbox" value=""/><label for="check2_test14">孙雨凯1</label></li>
+                            <li><input id="check2_test15" type="checkbox" value=""/><label for="check2_test15">孙雨凯1</label></li>
+                            <li><input id="check2_test16" type="checkbox" value=""/><label for="check2_test16">孙雨凯1</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input class="checkedAll" id="select3" type="checkbox" value="全选／取消全选"/><label for="select3">全选／取消全选</label>
+                        <ul>
+                            <li><input id="check3_test1" type="checkbox" value=""/><label for="check3_test1">孙雨凯2</label></li>
+                            <li><input id="check3_test2" type="checkbox" value=""/><label for="check3_test2">孙雨凯2</label></li>
+                            <li><input id="check3_test3" type="checkbox" value=""/><label for="check3_test3">孙雨凯2</label></li>
+                            <li><input id="check3_test4" type="checkbox" value=""/><label for="check3_test4">孙雨凯2</label></li>
+                            <li><input id="check3_test5" type="checkbox" value=""/><label for="check3_test5">孙雨凯2</label></li>
+                            <li><input id="check3_test6" type="checkbox" value=""/><label for="check3_test6">孙雨凯2</label></li>
+                            <li><input id="check3_test7" type="checkbox" value=""/><label for="check3_test7">孙雨凯2</label></li>
+                            <li><input id="check3_test8" type="checkbox" value=""/><label for="check3_test8">孙雨凯2</label></li>
+                            <li><input id="check3_test9" type="checkbox" value=""/><label for="check3_test9">孙雨凯2</label></li>
+                            <li><input id="check3_test10" type="checkbox" value=""/><label for="check3_test10">孙雨凯2</label></li>
+                            <li><input id="check3_test11" type="checkbox" value=""/><label for="check3_test11">孙雨凯2</label></li>
+                            <li><input id="check3_test12" type="checkbox" value=""/><label for="check3_test12">孙雨凯2</label></li>
+                            <li><input id="check3_test13" type="checkbox" value=""/><label for="check3_test13">孙雨凯2</label></li>
+                            <li><input id="check3_test14" type="checkbox" value=""/><label for="check3_test14">孙雨凯2</label></li>
+                            <li><input id="check3_test15" type="checkbox" value=""/><label for="check3_test15">孙雨凯2</label></li>
+                            <li><input id="check3_test16" type="checkbox" value=""/><label for="check3_test16">孙雨凯2</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input class="checkedAll" id="select4" type="checkbox" value="全选／取消全选"/><label for="select4">全选／取消全选</label>
+                        <ul>
+                            <li><input id="check4_test1" type="checkbox" value=""/><label for="check4_test1">孙雨凯3</label></li>
+                            <li><input id="check4_test2" type="checkbox" value=""/><label for="check4_test2">孙雨凯3</label></li>
+                            <li><input id="check4_test3" type="checkbox" value=""/><label for="check4_test3">孙雨凯3</label></li>
+                            <li><input id="check4_test4" type="checkbox" value=""/><label for="check4_test4">孙雨凯3</label></li>
+                            <li><input id="check4_test5" type="checkbox" value=""/><label for="check4_test5">孙雨凯3</label></li>
+                            <li><input id="check4_test6" type="checkbox" value=""/><label for="check4_test6">孙雨凯3</label></li>
+                            <li><input id="check4_test7" type="checkbox" value=""/><label for="check4_test7">孙雨凯3</label></li>
+                            <li><input id="check4_test8" type="checkbox" value=""/><label for="check4_test8">孙雨凯3</label></li>
+                            <li><input id="check4_test9" type="checkbox" value=""/><label for="check4_test9">孙雨凯3</label></li>
+                            <li><input id="check4_test10" type="checkbox" value=""/><label for="check4_test10">孙雨凯3</label></li>
+                            <li><input id="check4_test11" type="checkbox" value=""/><label for="check4_test11">孙雨凯3</label></li>
+                            <li><input id="check4_test12" type="checkbox" value=""/><label for="check4_test12">孙雨凯3</label></li>
+                            <li><input id="check4_test13" type="checkbox" value=""/><label for="check4_test13">孙雨凯3</label></li>
+                            <li><input id="check4_test14" type="checkbox" value=""/><label for="check4_test14">孙雨凯3</label></li>
+                            <li><input id="check4_test15" type="checkbox" value=""/><label for="check4_test15">孙雨凯3</label></li>
+                            <li><input id="check4_test16" type="checkbox" value=""/><label for="check4_test16">孙雨凯3</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input class="checkedAll" id="select5" type="checkbox" value="全选／取消全选"/><label for="select5">全选／取消全选</label>
+                        <ul>
+                            <li><input id="check5_test1" type="checkbox" value=""/><label for="check5_test1">孙雨凯4</label></li>
+                            <li><input id="check5_test2" type="checkbox" value=""/><label for="check5_test2">孙雨凯4</label></li>
+                            <li><input id="check5_test3" type="checkbox" value=""/><label for="check5_test3">孙雨凯4</label></li>
+                            <li><input id="check5_test4" type="checkbox" value=""/><label for="check5_test4">孙雨凯4</label></li>
+                            <li><input id="check5_test5" type="checkbox" value=""/><label for="check5_test5">孙雨凯4</label></li>
+                            <li><input id="check5_test6" type="checkbox" value=""/><label for="check5_test6">孙雨凯4</label></li>
+                            <li><input id="check5_test7" type="checkbox" value=""/><label for="check5_test7">孙雨凯4</label></li>
+                            <li><input id="check5_test8" type="checkbox" value=""/><label for="check5_test8">孙雨凯4</label></li>
+                            <li><input id="check5_test9" type="checkbox" value=""/><label for="check5_test9">孙雨凯4</label></li>
+                            <li><input id="check5_test10" type="checkbox" value=""/><label for="check5_test10">孙雨凯4</label></li>
+                            <li><input id="check5_test11" type="checkbox" value=""/><label for="check5_test11">孙雨凯4</label></li>
+                            <li><input id="check5_test12" type="checkbox" value=""/><label for="check5_test12">孙雨凯4</label></li>
+                            <li><input id="check5_test13" type="checkbox" value=""/><label for="check5_test13">孙雨凯4</label></li>
+                            <li><input id="check5_test14" type="checkbox" value=""/><label for="check5_test14">孙雨凯4</label></li>
+                            <li><input id="check5_test15" type="checkbox" value=""/><label for="check5_test15">孙雨凯4</label></li>
+                            <li><input id="check5_test16" type="checkbox" value=""/><label for="check5_test16">孙雨凯4</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-submit">
+                    <input class="tijiao1" type="submit" value="确认"/>
+                    <input class="send-off" type="reset" value="取消"/>
+                </div>
+            </form>
+        </nav>
+    </div>
+</div>
+<!--删除资源提示-->
+<div class="del_down del_down1" style="display: none">
+    <div class="hide"></div>
+    <div class="con">
+        <img src="img/del_down_waring.png">
+        <span class="nav-text">请选中您需要删除的资源</span>
+    </div>
+</div>
+<!--下载 提示-->
+<div class="del_down del_down2" style="display: none">
+    <div class="hide"></div>
+    <div class="con">
+        <img src="img/del_down_waring.png">
+        <span>请选中您需要下载的资源</span>
+    </div>
+</div>
+<!--foot start-->
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+<!--foot end-->
+</body>
+	<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
+	<script type="text/javascript" src="common/js/jquery.ztree.core.js"></script>
+	<script type="text/javascript" src="common/js/ztree.js"></script>
+	<script src="common/js/personal-resources.js"></script>
+	<script src="common/js/header_footer.js"></script>
+</html>

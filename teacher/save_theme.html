@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>课堂测评-组卷记录</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/classroom.css"/>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/compatible.css" />
+    <script src="common/js/YiBin.js"></script>
+    <script src="common/js/jquery.1.8.2.min.js"></script>
+    <script src="common/js/header_footer.js"></script>
+    <script src="common/js/classroom.js"></script>
+    <script src="common/js/jquery.ztree.core.js"></script>
+    <script src="common/js/echarts.min.js"></script>
+    <script src="common/js/YiBin.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--header start-->
+<div class="header">
+    <div class="header_con clearfix">
+        <div class="logo fl">
+            <img src="img/logo.png" alt=""/>
+        </div>
+        <ul class="fl header_list">
+            <li><a href="index-all.html" >首页</a></li>
+            <li><a href="personalresources.html">个人资源中心</a></li>
+            <li><a href="test_questions.html" class="header_active">课堂评测</a></li>
+            <li><a href="classroom_record.html">课堂记录</a></li>
+            <li><a href="downrecord.html">综合分析</a></li>
+        </ul>
+        <div class="header_btn fr">
+            <strong>
+            	<span>Hi,秦佳琪</span>
+            	<img src="img/xia_red.png" alt=""/>
+            	<ul class="personal">
+	                <li class="personal_active name_t">
+	                    <i class="red"></i>
+	                    <span>个人信息</span>
+	                </li>
+	                <li class="black_s">
+	                    <i class="grey"></i>
+	                    <span>退出系统</span>
+	                </li>
+	            </ul>
+            </strong>
+            <em class="login">[已登录]</em>
+        </div>
+    </div>
+</div>
+<!--header end-->
+<div class="wrapper">
+    <div class="head clearfix">
+        <ul class="nav_list clearfix">
+                <li><a href="test_questions.html" class="nav_list_active">试题库</a></li>
+                <li><a href="school_questions.html">校本题库</a></li>
+                <li><a href="me_questions.html">我的题库</a></li>
+                <li><a href="assembly.html">组卷记录</a></li>
+                <li><a href="my_classroom.html">我的课堂</a></li>
+            </ul>
+        <div class="test_btn clearfix">
+	            <div class="blue_box fr">
+	            	<img class="test_box" src="img/delete_box.png" alt=""/>
+	                <span>试题篮</span>
+	                <strong class="test_num">10</strong>
+	            </div>
+            </div>
+        <div class="box_car">
+            <ul>
+                <li class="clearfix">
+                    <span class="name fl">题目名称</span>
+                    <span class="car fr">清空</span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+                <li>
+                    <span class="name fl">名称名称名称名称名称名称名称名称名称</span>
+                    <span class="car fr"><img src="img/delete.png" alt=""/></span>
+                </li>
+            </ul>
+            <span class="box_car_btn"><a href="save_theme.html">试卷预览</a></span>
+        </div>
+    </div>
+    <div class="theme">
+        <div class="theme_head clearfix">
+            <h4 class="fl">试卷预览</h4>
+            <div class="theme_dead_btn fr">
+                    <span class="Save_as">
+                        <img src="img/lingcun_blue.png" alt=""/> 保存
+                    </span>
+                    <span class="download">
+                        <img src="img/xiazai_red.png" alt=""/> 下载
+                    </span>
+            </div>
+        </div>
+        <div class="theme_title">
+            <input class="save_theme_input" type="text" value="请输入名称" readonly="true"/>
+        </div>
+        <div class="choose">
+            <p class="tit">一、选择题（本大题共<span>2</span>小题，共<span>4.0</span>分）</p>
+        	<ol class='List-questions'>
+				<div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 11]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 22]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 33]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 444]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 55]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class='ques_num clearfix'>
+					<div class='pic fl'>
+						<h5><span> 1 </span>.给下面词语中加粗的字选择最恰当的解释 迎风招展  [ 66]<h5>
+						<ul class='clearfix'>
+							<li> A.张开</li>
+							<li> B.施展</li>
+							<li> C.放宽</li>
+							<li> D.展览</li>
+						</ul>
+					</div>
+					<div class='edit fr'>
+						<span>答案解析</span>
+						<img class='del' src='img/theme_del.png' alt=''/>
+						<img class='up' src='img/theme_up.png' alt=''/>
+						<img class='next' src='img/theme_down.png' alt=''/>
+					</div>
+				</div>
+				<div class="mask">
+			        <div class="mask_box">
+			            <div class="mask_head clearfix">
+			                <h4 class="fl">答案解析</h4>
+			                <img class="fr close" src="img/close.png" alt=""/>
+			            </div>
+			            <p class="mask_p">标题来源 : <span>XXXXXXXXXXXXXXX</span></p>
+			            <p class="mask_p">
+			                <span>分数：<em>xxxxx</em></span>
+			                <span>题型：<em>xxxxx</em></span>
+			                <span>创建时间：<em>xxxxx</em></span>
+			            </p>
+			            <div class="mask_pic">
+			                <h3>[题文]</h3>
+			                <h5><span>1.</span>是的结合方式框架阿道夫哈酒是的减肥撒可敬的<h5>
+			                <ul class="clearfix"> 
+			                	<li>A.的房间是的</li>
+			                	<li>A.是的发送到</li>
+			                	<li>A.阿是范德萨</li>
+			                	<li>A.爱的发萨菲</li>
+			                </ul>
+			                <h3>[答案]</h3>
+			                <strong>A</strong>
+			                <h3>[解析]</h3>
+			                <div class="mask_jx">
+			                	语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一种表发方式语言是一
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</ol>
+        </div>
+    </div>
+</div>
+<!--删除资源提示-->
+<div class="del_down" style="display: none">
+    <div class="hide"></div>
+    <div class="con">
+        <img src="img/del_down_waring.png">
+        <span class="nav-text">请您输入名称</span>
+    </div>
+</div>
+<!--foot start-->
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+<!--foot end-->
+</body>
+</html>

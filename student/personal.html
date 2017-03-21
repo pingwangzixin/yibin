@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人信息</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+		<link rel="stylesheet" href="css/student.css" />
+		<script type="text/javascript" src="common/js/jquery.1.8.2.min.js"></script>
+		<script type="text/javascript" src="common/js/student.js"></script>
+	</head>
+	<body>
+<header>
+    <nav>
+        <img class="logo" src="img/logo.png"/>
+        <div class="header-right clearfix">
+        	            <a href="personal.html"><img class="header_user" src="img/header_user.png"/>Hi,王喜</a>|<a href="login.html">退出</a>
+        </div>
+    </nav>
+</header>
+		<div class="container">
+			<div class="sy_main person">
+				<ul class="nav clearfix">
+					<li><a href="main_page.html"><img src="img/nav_sy.png" alt=""></a></li>
+					<li><a href="preview.html"><img src="img/nav_yx.png" alt=""></a></li>
+					<li><a href="classroom.html"><img src="img/nav_kt.png" alt=""></a></li>
+					<li><a href="knowledgebase.html"><img src="img/nav_zs.png" alt=""></a></li>
+				</ul>
+				<div class="tv">
+					<div class="tv_box clearfix">
+						<ul class="fl info">
+							<li class="info_active"><img src="img/tv_xx.png" alt=""></li>
+							<li><img src="img/tv_zl.png" alt=""></li>
+							<li><img src="img/tv_aq.png" alt=""></li>
+							<li><img src="img/tv_sz.png" alt=""></li>
+						</ul>
+						
+						<div class=" fr info_show">
+							<!--基本信息 -->
+							<div class="info_show_basic  info_show_con"  style="display: block;">
+								<div class="my_data clearfix">
+									<img class="fl pen" src="img/pen.png" alt="">
+									<div class="data_line fr">
+										<div class="tit clearfix">
+											<span class="fl">我的资料</span>
+											<em class="fr"><img src="img/tv_xg.png" alt=""></em>
+										</div>
+										<ul class="con">
+											<li>姓名： <span>狮子王</span></li>
+											<li>性别： <span>男</span></li>
+											<li>出生日期：<span>2002</span>年<span>11</span>月<span>01</span>日</li>
+											<li>学校： <span>一起作业体验学校</span></li>
+											<li>班级： <span>狮子王</span></li>
+											<li>姓名： <span>小学毕业646班</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="my_data clearfix">
+									<img class="fl pen" src="img/pen.png" alt="">
+									<div class="data_line fr">
+										<div class="tit clearfix">
+											<span class="fl">账户安全</span>
+										</div>
+										<div class="debits  clearfix">
+											<span class="fl">密码：<i>******</i></span>
+											<em class="fr"><img src="img/tv_xg.png" alt=""></em>
+										</div>
+										<div class="debits  clearfix">
+											<span class="fl">手机号：<i>未绑定手机号</i></span>
+											<em class="fr"><img src="img/tv_wbd.png" alt=""></em>
+										</div>
+										<div class="debits  clearfix">
+											<span class="fl">邮箱：<i>未绑定邮箱</i></span>
+											<em class="fr"><img src="img/tv_wbd.png" alt=""></em>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--我的资料 -->
+							<div class="info_show_data  info_show_con"  style="display: none;">
+								<ul class="data_list">
+									<li>
+										<span>姓名：</span>
+										<em>狮子王</em>
+										<strong>如果姓名有错误请联系您的老师进行修改</strong>
+									</li>
+									<li>
+										<span>性别：</span>
+										<input type="radio" name="six"value="" checked="checked"/> <em>男</em>
+										<input type="radio" name="six"value="" /> <em>女</em>
+									</li>
+									<li>
+										<span>出生日期：</span>
+										<select>
+											<option>2017</option>
+										</select>
+										<select>
+											<option>01</option>
+										</select>
+										<select>
+											<option>01</option>
+										</select>
+									</li>
+									<li>
+										<span>QQ号码：</span>
+										<i contenteditable="true">1512312132</i>
+									</li>
+									<li>
+										<span>学校：</span>
+										<em>一起作业体验学校 </em>
+									</li>
+									<li>
+										<span>班级：</span>
+										<em>小学毕业646班</em>
+									</li>
+								</ul>
+								<div class="data_btn">
+									<img src="img/yes.png" alt="" />
+								</div>
+							</div>
+							
+							<!--账户安全 -->
+							<div class="info_show_safety info_show_con"  style="display: none;">
+								<div class="safety clearfix">
+									<img class="fl"  src="img/duigou.png" alt="" />
+									<div class="fl font">
+										<p>登录密码：<span>已设置</span></p>
+										<p>安全性高的密码，可以使账号更安全</p>
+									</div>
+									<div class="btn fr">
+										<img src="img/safety_xgmm.png" alt="" />
+									</div>
+								</div>
+								<div class="safety clearfix">
+									<img class="fl cha"  src="img/cha.png" alt="" />
+									<div class="fl font">
+										<p class="font_red">手机绑定：<span>未设置</span></p>
+										<p>手机绑定后，您即可享受手机登录，手机找回密码等服务</p>
+									</div>
+									<div class="btn fr">
+										<img src="img/safety_bdsj.png" alt="" />
+									</div>
+								</div>
+								<div class="safety clearfix">
+									<img class="fl cha"  src="img/cha.png" alt="" />
+									<div class="fl font">
+										<p class="font_red">邮箱绑定：<span>未设置</span></p>
+										<p>绑定后，可以通过邮箱登录一起作业，以及找回密码</p>
+									</div>
+									<div class="btn fr">
+										<img src="img/safety_bdyx.png" alt="" />
+									</div>
+								</div>
+								<div class="safety clearfix">
+									<img class="fl cha"  src="img/cha.png" alt="" />
+									<div class="fl font">
+										<p class="font_red">设置密保问题：<span>未设置</span></p>
+										<p>设置后，可以通过回答自己设置的密保问题找回密码</p>
+									</div>
+									<div class="btn fr">
+										<img src="img/safety_szmb.png" alt="" />
+									</div>
+								</div>
+							</div>
+							
+							<!--系统设置 -->
+							<div class="info_show_set  info_show_con"  style="display: none;">
+								<p class="clearfix">
+									<span class="fl">预习作业提醒</span>
+									<img class="fr"  src="img/kai_on.png" alt="" />
+								</p>
+								<p class="clearfix">
+									<span class="fl">课后作业提醒</span>
+									<img class="fr"  src="img/kai_on.png" alt="" />
+								</p>
+								<p class="clearfix">
+									<span class="fl">学习资源推送通知</span>
+									<img class="fr"  src="img/kai_on.png" alt="" />
+								</p>
+								<p class="clearfix">
+									<span class="fl">分析报告提醒</span>
+									<img class="fr"  src="img/kai_on.png" alt="" />
+								</p>
+								<p class="clearfix">
+									<span class="fl">教师互动信息通知</span>
+									<img class="fr"  src="img/kai_on.png" alt="" />
+								</p>
+								<div class="data_btn">
+									<img src="img/yes.png" alt="" />
+								</div>
+							</div>
+						</div>
+						
+						
+						
+							
+					
+					</div>
+					<div class="head_img">
+						<img src="img/touxiang.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="footer">
+        <div class="footer_con">
+            <p class="footer_firm">
+                <span>主办：宜宾市教育体育局</span>
+                <span>承办：宜宾市新宜集团</span>
+                <span>技术支持：宜宾市科信教育投资股份有限公司</span>
+            </p>
+            <p class="footer_phone">
+                <span>&copy;2016  宜宾市智慧教育云平台</span>
+                <span>联系电话：0831—83500071</span>
+                <span>
+                	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51150202000002">
+                		<img src="img/beian.png" alt="" />
+                		川公网安备1150202000002号
+                	</a>
+                </span>
+            </p>
+        </div>
+    </div>
+	</body>
+</html>

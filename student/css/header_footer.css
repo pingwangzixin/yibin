@@ -1,0 +1,68 @@
+/*导航条*/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+header nav {
+    width: 1200px;
+    height: 60px;
+    margin: 0px auto 30px;
+}
+header nav img.logo{
+	margin-top: 10px;
+}
+header nav .header-right{
+	margin-top: 10px;
+}
+header nav img.header_user{
+	float: left;
+}
+header nav span {
+    color: #732B23;
+    line-height: 36px;
+    margin-left: 10px;
+}
+header nav .header-right {
+    float: right;
+}
+header nav .header-right a {
+    line-height: 36px;
+    margin: 0 15px;
+}
+/*footer*/
+footer{
+	height: 80px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+/*footer end*/
+/*β��*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+.footer .footer_con{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 15px 0;
+}
+.footer .footer_con a,.footer .footer_con a:hover{
+	color: #222;
+	font-weight:normal;
+}
+.footer .footer_con p{
+    width: 1200px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color:#222;
+}
+.footer .footer_con p span{margin: 0 19px;}
+.footer .footer_con p span img{
+	position: relative;
+	top:5px;
+}
